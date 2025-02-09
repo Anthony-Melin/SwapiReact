@@ -1,0 +1,7 @@
+node_modules
+.react-router
+build
+__snapshots__
+coverage
+public/mockServiceWorker.js
+.idea
