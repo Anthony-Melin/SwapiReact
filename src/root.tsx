@@ -1,5 +1,14 @@
 import { PropsWithChildren } from 'react'
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
+import {
+    Link,
+    Links,
+    Meta,
+    Outlet,
+    Scripts,
+    ScrollRestoration,
+} from 'react-router'
+import { urlParse } from '@api/utils.ts'
+import useSections from '@hooks/useSections.tsx'
 
 export const Layout = ({ children }: PropsWithChildren) => {
     return (
@@ -11,12 +20,12 @@ export const Layout = ({ children }: PropsWithChildren) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
-                <title>Vite + React + TS</title>
+                <title>Swapi React</title>
                 <Meta />
                 <Links />
             </head>
             <body>
-                <div id="root">{children}</div>
+                {children}
                 <ScrollRestoration />
                 <Scripts />
             </body>
@@ -33,7 +42,26 @@ export const ErrorBoundary = () => {
 }
 
 const Root = () => {
-    return <Outlet />
+    const sections = useSections()
+    return (
+        <>
+            <header>
+                <Link to="/">
+                    <strong>SwapiReact</strong>
+                </Link>
+                {Object.entries(sections).map(([sectionLabel, sectionUrl]) => {
+                    return (
+                        <Link to={urlParse(sectionUrl)} key={sectionLabel}>
+                            {sectionLabel}
+                        </Link>
+                    )
+                })}
+            </header>
+            <main>
+                <Outlet />
+            </main>
+        </>
+    )
 }
 
 export default Root
