@@ -30,6 +30,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@api': path.resolve(__dirname, './src/api'),
+            '@hooks': path.resolve(__dirname, './src/hooks'),
             '@pages': path.resolve(__dirname, './src/pages'),
         },
     },
