@@ -16,6 +16,7 @@ body {
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-image: url("background.jpg");
 }
 
 main {
@@ -50,5 +51,39 @@ header > a {
 }
 
 a {
+    color: var(--yellow);
+}
+
+.home-page {
+    perspective: 400px;
+    perspective-origin: 150% 150%;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(30deg) translateZ(150px);
+}
+
+h1 {
+    width: min-content;
+    margin: auto;
+    color: var(--black);
+    font-size: 8rem;
+    text-shadow:
+             4px  0   var(--yellow),
+            -4px  0   var(--yellow),
+             0    4px var(--yellow),
+             0   -4px var(--yellow),
+             2px  2px var(--yellow),
+            -2px -2px var(--yellow),
+             2px -2px var(--yellow),
+            -2px  2px var(--yellow);
+    display: flex;
+    justify-content: center;
+}
+
+.crawl-content {
+    margin: auto;
+    width: 50%;
+    font-size: 2rem;
+    text-align: justify;
+    transform-origin: 50% 100%;
     color: var(--yellow);
 }
