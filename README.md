@@ -31,3 +31,7 @@ To test locally, in addition to preview mode of vite, serve package can be used 
 ```
 npx serve build/client
 ```
+
+## Images
+
+- background.jpg: https://pixabay.com/fr/photos/%C3%A9toiles-univers-2539245/
