@@ -1,4 +1,4 @@
-import {urlFormat} from "@api/utils.ts";
+import { urlFormat } from '@api/utils.ts'
 
 async function getFetch<T>(
     url: string = '',

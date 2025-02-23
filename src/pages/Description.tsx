@@ -18,7 +18,11 @@ const Description = () => {
             <h3>{name || title}</h3>
             {Object.entries(restKeys).map(([key, value]) => {
                 if (typeof value === 'string') {
-                    return <p>{key}: {value}</p>
+                    return (
+                        <p>
+                            {key}: {value}
+                        </p>
+                    )
                 }
             })}
         </>
