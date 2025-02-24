@@ -1,14 +1,11 @@
 import { PropsWithChildren } from 'react'
 import {
-    Link,
     Links,
     Meta,
     Outlet,
     Scripts,
     ScrollRestoration,
 } from 'react-router'
-import { urlParse } from '@api/utils.ts'
-import useSections from '@hooks/useSections.tsx'
 
 export const Layout = ({ children }: PropsWithChildren) => {
     return (
@@ -42,26 +39,7 @@ export const ErrorBoundary = () => {
 }
 
 const Root = () => {
-    const sections = useSections()
-    return (
-        <>
-            <header>
-                <Link to="/">
-                    <strong>SwapiReact</strong>
-                </Link>
-                {Object.entries(sections).map(([sectionLabel, sectionUrl]) => {
-                    return (
-                        <Link to={urlParse(sectionUrl)} key={sectionLabel}>
-                            {sectionLabel}
-                        </Link>
-                    )
-                })}
-            </header>
-            <main>
-                <Outlet />
-            </main>
-        </>
-    )
+    return <Outlet/>
 }
 
 export default Root

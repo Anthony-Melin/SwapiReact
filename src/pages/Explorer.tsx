@@ -21,7 +21,7 @@ const Explorer = () => {
     >
     const { section } = useParams()
     return (
-        <>
+        <main>
             <h1>{section}</h1>
             <h3>Results: {explore.count}</h3>
             <div className="page-navigation">
@@ -41,7 +41,7 @@ const Explorer = () => {
                     )
                 })}
             </ul>
-        </>
+        </main>
     )
 }
 

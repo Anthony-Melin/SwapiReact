@@ -14,7 +14,7 @@ const Description = () => {
         details: { name, title, ...restKeys },
     } = useLoaderData() as Awaited<ReturnType<typeof clientLoader>>
     return (
-        <>
+        <main>
             <h3>{name || title}</h3>
             {Object.entries(restKeys).map(([key, value]) => {
                 if (typeof value === 'string') {
@@ -25,7 +25,7 @@ const Description = () => {
                     )
                 }
             })}
-        </>
+        </main>
     )
 }
 
