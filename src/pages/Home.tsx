@@ -1,53 +1,52 @@
+import { Link } from 'react-router'
+
 function Home() {
     return (
-        <div id="home-page">
+        <main id="home-page">
             <h1>Swapi React</h1>
-            <div className="crawl-content">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam, nisi ut
-                aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste
-                natus error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-                quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-                iure reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste
-                natus error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
-                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-                quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-                iure reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                voluptas nulla pariatur?
+            <div id="crawl-container">
+                <div id="crawl-content">
+                    <p>
+                        L’année 2025 sera marqué par l’avènement d’une nouvelle
+                        ère pour le développement front-end.
+                    </p>
+                    <p>
+                        React 19 et React Router V7 ont émergé, porteurs de
+                        promesses révolutionnaires : un rendu plus performant
+                        grâce au streaming SSR, une gestion fluide des états, et
+                        une navigation optimisée digne des vaisseaux les plus
+                        rapides de la galaxie.
+                    </p>
+                    <p>
+                        Face à ces avancées, une mission s’impose : bâtir une
+                        application moderne, réactive et évolutive, exploitant
+                        toute la puissance de ces nouvelles technologies.
+                    </p>
+                    <p>
+                        Grâce à React 19, le rendu devient progressif,
+                        interactif dès la première milliseconde.
+                    </p>
+                    <p>
+                        Quant à React Router V7, il redéfinit le voyage entre
+                        les pages, rendant la navigation plus intuitive et
+                        efficace que jamais.
+                    </p>
+                    <p>
+                        Pour explorer ces nouvelles technologies, un projet
+                        ambitieux voit le jour : SwapiReact, une application
+                        interactive dédiée à l’univers Star Wars.
+                    </p>
+                    <p>
+                        Alimentée par l’API SWAPI, elle permet d’accéder aux
+                        données des personnages, planètes, vaisseaux et films de
+                        la saga culte.
+                    </p>
+                    <p>
+                        <Link to="/people">Commencer l'exploration</Link>
+                    </p>
+                </div>
             </div>
-        </div>
+        </main>
     )
 }
 

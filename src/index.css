@@ -10,17 +10,18 @@
     initial-value: #000000;
 }
 
-body {
-    margin: 0;
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    background-image: url('/background.jpg');
+@property --dark-grey {
+    inherits: true;
+    syntax: '*';
+    initial-value: #242424;
 }
 
-main {
-    padding: 15px;
+body {
+    margin: 0;
+    color: var(--yellow);
+    background-color: var(--dark-grey);
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-image: url('/background.jpg');
 }
 
 header {
@@ -54,18 +55,11 @@ a {
     color: var(--yellow);
 }
 
-.home-page {
-    perspective: 400px;
-    perspective-origin: 150% 150%;
-    transform-style: preserve-3d;
-    transform: rotateX(30deg) rotateY(30deg) translateZ(150px);
-}
-
 h1 {
     width: min-content;
     margin: auto;
     color: var(--black);
-    font-size: 8rem;
+    font-size: min(15vw, 15vh);
     text-shadow:
         4px 0 var(--yellow),
         -4px 0 var(--yellow),
@@ -75,15 +69,44 @@ h1 {
         -2px -2px var(--yellow),
         2px -2px var(--yellow),
         -2px 2px var(--yellow);
-    display: flex;
-    justify-content: center;
 }
 
-.crawl-content {
-    margin: auto;
-    width: 50%;
-    font-size: 2rem;
-    text-align: justify;
-    transform-origin: 50% 100%;
-    color: var(--yellow);
+#home-page {
+    height: 100vh;
+    overflow: hidden;
+
+    h1 {
+        height: 50vh;
+        align-content: end;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    p:nth-child(-n + 1) {
+        margin-top: 20vh;
+    }
+
+    p {
+        margin: 10vh 0;
+    }
+
+    #crawl-container {
+        height: 50vh;
+        perspective: 28rem;
+        perspective-origin: center top;
+        transform-style: preserve-3d;
+    }
+
+    #crawl-content {
+        overflow: scroll;
+        margin: 0 auto;
+        width: 60%;
+        height: 50vh;
+        font-size: min(5vw, 5vh);
+        text-align: justify;
+        transform: rotateX(40deg);
+    }
 }
