@@ -1,11 +1,5 @@
 import { PropsWithChildren } from 'react'
-import {
-    Links,
-    Meta,
-    Outlet,
-    Scripts,
-    ScrollRestoration,
-} from 'react-router'
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router'
 
 export const Layout = ({ children }: PropsWithChildren) => {
     return (
@@ -39,7 +33,7 @@ export const ErrorBoundary = () => {
 }
 
 const Root = () => {
-    return <Outlet/>
+    return <Outlet />
 }
 
 export default Root
