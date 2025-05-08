@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Height > should match snapshot 1`] = `
+<p
+  data-testid="height"
+>
+  Height: 
+  VALUE
+</p>
+`;
