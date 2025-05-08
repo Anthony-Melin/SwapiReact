@@ -4,7 +4,7 @@ exports[`BirthYear > should match snapshot 1`] = `
 <p
   data-testid="birthyear"
 >
-  BirthYear: 
+  Birth year: 
   VALUE
 </p>
 `;
