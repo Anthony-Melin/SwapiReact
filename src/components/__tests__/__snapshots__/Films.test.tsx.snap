@@ -12,7 +12,9 @@ exports[`Films > with empty list > should match snapshot 1`] = `
   <p
     data-testid="films-empty"
   >
-    No films linked
+    No 
+    films
+     linked
   </p>
 </div>
 `;
