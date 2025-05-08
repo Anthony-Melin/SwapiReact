@@ -1,8 +1,7 @@
 import { http, HttpResponse } from 'msw'
-import { SWAPI_URL } from '@api/utils.ts'
 
 export default [
-    http.get(`${SWAPI_URL}/people`, ({ request }) => {
+    http.get(`${import.meta.env.VITE_SWAPI_URL}/people`, ({ request }) => {
         const queryParams = Object.fromEntries(
             new URL(request.url).searchParams.entries()
         )
@@ -684,7 +683,7 @@ export default [
         }
         return new HttpResponse(null, { status: 404 })
     }),
-    http.get(`${SWAPI_URL}/people/:id`, ({ params: { id } }) => {
+    http.get(`${import.meta.env.VITE_SWAPI_URL}/people/:id`, ({ params: { id } }) => {
         if (id === '1') {
             return HttpResponse.json({
                 name: 'Luke Skywalker',
