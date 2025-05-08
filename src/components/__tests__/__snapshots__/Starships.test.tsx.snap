@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Starships > with empty list > should match snapshot 1`] = `
+<div
+  data-testid="starships"
+>
+  <p
+    data-testid="starships-title"
+  >
+    Starships
+  </p>
+  <p
+    data-testid="starships-empty"
+  >
+    No starships linked
+  </p>
+</div>
+`;
+
+exports[`Starships > with filled list > should match snapshot 1`] = `
+<div
+  data-testid="starships"
+>
+  <p
+    data-testid="starships-title"
+  >
+    Starships
+  </p>
+  <ul>
+    <li
+      data-testid="starships-0"
+    >
+      VALUE_1
+    </li>
+    <li
+      data-testid="starships-1"
+    >
+      VALUE_2
+    </li>
+  </ul>
+</div>
+`;
