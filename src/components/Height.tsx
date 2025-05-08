@@ -1,13 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
 
-type HeightProps = PropsWithChildren<{ value: string }>
-
-const Height = ({ value, ...restProps }: HeightProps) => {
-    return (
-        <p data-testid="height" {...restProps}>
-            Height: {value}
-        </p>
-    )
-}
-
-export default Height
+export default LabelValueFactory('height', 'Height')

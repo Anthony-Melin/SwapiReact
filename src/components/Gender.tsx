@@ -1,13 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
 
-type GenderProps = PropsWithChildren<{ value: string }>
-
-const Gender = ({ value, ...restProps }: GenderProps) => {
-    return (
-        <p data-testid="gender" {...restProps}>
-            Gender: {value}
-        </p>
-    )
-}
-
-export default Gender
+export default LabelValueFactory('gender', 'Gender')

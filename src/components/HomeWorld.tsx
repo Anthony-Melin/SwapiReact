@@ -1,13 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
 
-type HomeWorldProps = PropsWithChildren<{ value: string }>
-
-const HomeWorld = ({ value, ...restProps }: HomeWorldProps) => {
-    return (
-        <p data-testid="homeworld" {...restProps}>
-            Home world: {value}
-        </p>
-    )
-}
-
-export default HomeWorld
+export default LabelValueFactory('homeworld', 'Home world')

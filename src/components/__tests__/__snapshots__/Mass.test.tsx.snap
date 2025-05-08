@@ -4,7 +4,8 @@ exports[`Mass > should match snapshot 1`] = `
 <p
   data-testid="mass"
 >
-  Mass: 
+  Mass
+  : 
   VALUE
 </p>
 `;

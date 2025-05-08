@@ -1,13 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
 
-type EyeColorProps = PropsWithChildren<{ value: string }>
-
-const EyeColor = ({ value, ...restProps }: EyeColorProps) => {
-    return (
-        <p data-testid="eyecolor" {...restProps}>
-            Eye color: {value}
-        </p>
-    )
-}
-
-export default EyeColor
+export default LabelValueFactory('eyecolor', 'Eye color')
