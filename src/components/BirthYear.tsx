@@ -5,7 +5,7 @@ type BirthYearProps = PropsWithChildren<{ value: string }>
 const BirthYear = ({ value, ...restProps }: BirthYearProps) => {
     return (
         <p data-testid="birthyear" {...restProps}>
-            BirthYear: {value}
+            Birth year: {value}
         </p>
     )
 }
