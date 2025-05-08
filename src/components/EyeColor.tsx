@@ -4,7 +4,7 @@ type EyeColorProps = PropsWithChildren<{ value: string }>
 
 const EyeColor = ({ value, ...restProps }: EyeColorProps) => {
     return (
-        <p datatest-id="eyecolor" {...restProps}>
+        <p data-testid="eyecolor" {...restProps}>
             EyeColor: {value}
         </p>
     )

@@ -4,11 +4,11 @@ type StarshipsProps = PropsWithChildren<{ values: string[] }>
 
 const Starships = ({ values, ...restProps }: StarshipsProps) => {
     return (
-        <div datatest-id="starships" {...restProps}>
+        <div data-testid="starships" {...restProps}>
             <p>Starships</p>
             <ul>
                 {values.map((value, index) => {
-                    return <li key={`starship-${index}`} datatest-id={`starship-${index}`}>{value}</li>
+                    return <li key={`starship-${index}`} data-testid={`starship-${index}`}>{value}</li>
                 })}
             </ul>
         </div>
