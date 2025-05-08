@@ -4,7 +4,7 @@ type HeightProps = PropsWithChildren<{ value: string }>
 
 const Height = ({ value, ...restProps }: HeightProps) => {
     return (
-        <p {...restProps}>
+        <p data-testid="height" {...restProps}>
             Height: {value}
         </p>
     )
