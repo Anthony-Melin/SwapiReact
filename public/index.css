@@ -110,3 +110,7 @@ h1 {
         transform: rotateX(40deg);
     }
 }
+
+#description-page {
+    padding: 15px;
+}
