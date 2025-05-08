@@ -1,8 +1,7 @@
 import { http, HttpResponse } from 'msw'
-import { SWAPI_URL } from '@api/utils.ts'
 
 export default [
-    http.get(`${SWAPI_URL}/films`, () => {
+    http.get(`${import.meta.env.VITE_SWAPI_URL}/films`, () => {
         return HttpResponse.json({
             count: 6,
             next: null,

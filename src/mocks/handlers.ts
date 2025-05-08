@@ -1,13 +1,12 @@
 import { http, HttpResponse } from 'msw'
-import { SWAPI_URL } from '@api/utils.ts'
 import peopleHandlers from './peopleHandlers.ts'
 import filmHandlers from './filmHandlers.ts'
 
 export const handlers = [
-    http.get(SWAPI_URL, () => {
+    http.get(import.meta.env.VITE_SWAPI_URL, () => {
         return HttpResponse.json({
-            people: 'https://swapi.dev/api/people/',
-            films: 'https://swapi.dev/api/films/',
+            people: `${import.meta.env.VITE_SWAPI_URL}/people/`,
+            films: `${import.meta.env.VITE_SWAPI_URL}/films/`,
         })
     }),
     ...peopleHandlers,
