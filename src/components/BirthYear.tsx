@@ -1,13 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
 
-type BirthYearProps = PropsWithChildren<{ value: string }>
-
-const BirthYear = ({ value, ...restProps }: BirthYearProps) => {
-    return (
-        <p data-testid="birthyear" {...restProps}>
-            Birth year: {value}
-        </p>
-    )
-}
-
-export default BirthYear
+export default LabelValueFactory('birthyear', 'Birth year')

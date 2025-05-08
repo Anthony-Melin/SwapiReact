@@ -4,7 +4,8 @@ exports[`EyeColor > should match snapshot 1`] = `
 <p
   data-testid="eyecolor"
 >
-  Eye color: 
+  Eye color
+  : 
   VALUE
 </p>
 `;

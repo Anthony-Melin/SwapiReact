@@ -1,13 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
 
-type SkinColorProps = PropsWithChildren<{ value: string }>
-
-const SkinColor = ({ value, ...restProps }: SkinColorProps) => {
-    return (
-        <p data-testid="skincolor" {...restProps}>
-            Skin color: {value}
-        </p>
-    )
-}
-
-export default SkinColor
+export default LabelValueFactory('skincolor', 'Skin color')

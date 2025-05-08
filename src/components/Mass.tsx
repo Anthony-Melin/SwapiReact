@@ -1,13 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
 
-type MassProps = PropsWithChildren<{ value: string }>
-
-const Mass = ({ value, ...restProps }: MassProps) => {
-    return (
-        <p data-testid="mass" {...restProps}>
-            Mass: {value}
-        </p>
-    )
-}
-
-export default Mass
+export default LabelValueFactory('mass', 'Mass')
