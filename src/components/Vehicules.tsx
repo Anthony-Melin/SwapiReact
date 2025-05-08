@@ -8,7 +8,7 @@ const Vehicules = ({ values, ...restProps }: VehiculesProps) => {
             <p>Vehicules</p>
             <ul>
                 {values.map((value, index) => {
-                    return <li datatest-id={`vehicule-${index}`}>{value}</li>
+                    return <li key={`vehicule-${index}`} datatest-id={`vehicule-${index}`}>{value}</li>
                 })}
             </ul>
         </div>
