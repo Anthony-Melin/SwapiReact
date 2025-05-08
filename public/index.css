@@ -1,0 +1,112 @@
+@property --yellow {
+    inherits: true;
+    syntax: '*';
+    initial-value: #ffdd00;
+}
+
+@property --black {
+    inherits: true;
+    syntax: '*';
+    initial-value: #000000;
+}
+
+@property --dark-grey {
+    inherits: true;
+    syntax: '*';
+    initial-value: #242424;
+}
+
+body {
+    margin: 0;
+    color: var(--yellow);
+    background-color: var(--dark-grey);
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-image: url('/background.jpg');
+}
+
+header {
+    height: 10vh;
+    max-height: 50px;
+    display: flex;
+    gap: 15px;
+    background-color: var(--yellow);
+    padding-left: 2rem;
+    align-items: center;
+}
+
+header > a {
+    color: var(--black);
+    font-size: x-large;
+}
+
+.page-navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.page-navigation > a {
+    color: var(--black);
+    background-color: var(--yellow);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+a {
+    color: var(--yellow);
+}
+
+h1 {
+    width: min-content;
+    margin: auto;
+    color: var(--black);
+    font-size: min(15vw, 15vh);
+    text-shadow:
+        4px 0 var(--yellow),
+        -4px 0 var(--yellow),
+        0 4px var(--yellow),
+        0 -4px var(--yellow),
+        2px 2px var(--yellow),
+        -2px -2px var(--yellow),
+        2px -2px var(--yellow),
+        -2px 2px var(--yellow);
+}
+
+#home-page {
+    height: 100vh;
+    overflow: hidden;
+
+    h1 {
+        height: 50vh;
+        align-content: end;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    p:nth-child(-n + 1) {
+        margin-top: 20vh;
+    }
+
+    p {
+        margin: 10vh 0;
+    }
+
+    #crawl-container {
+        height: 50vh;
+        perspective: 28rem;
+        perspective-origin: center top;
+        transform-style: preserve-3d;
+    }
+
+    #crawl-content {
+        overflow: scroll;
+        margin: 0 auto;
+        width: 60%;
+        height: 50vh;
+        font-size: min(5vw, 5vh);
+        text-align: justify;
+        transform: rotateX(40deg);
+    }
+}

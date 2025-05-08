@@ -1,11 +1,15 @@
 import { http, HttpResponse } from 'msw'
+import { SWAPI_URL } from '@api/utils.ts'
+import peopleHandlers from './peopleHandlers.ts'
+import filmHandlers from './filmHandlers.ts'
 
 export const handlers = [
-    http.get('/api/user', () => {
+    http.get(SWAPI_URL, () => {
         return HttpResponse.json({
-            id: 'c7b3d8e0-5e0b-4b0f-8b3a-3b9f4b3d3b3d',
-            firstName: 'John',
-            lastName: 'Maverick',
+            people: 'https://swapi.dev/api/people/',
+            films: 'https://swapi.dev/api/films/',
         })
     }),
+    ...peopleHandlers,
+    ...filmHandlers,
 ]

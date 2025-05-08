@@ -1,6 +1,6 @@
-# Vite React-Router
+# Swapi React
 
-Remake of Vite's react-ts template but with react-router V7.
+A simple UI to explore the Star Wars API.
 
 ## Getting started
 
@@ -32,12 +32,6 @@ To test locally, in addition to preview mode of vite, serve package can be used 
 npx serve build/client
 ```
 
-## Tags
+## Images
 
-Tags of this project show incremental stages.
-
-| Tag        | Description                          |
-|------------|--------------------------------------|
-| Vanilla    | Vite's react-ts template + prettier  |
-| Chocolate  | Vanilla tag + tests (vitest & jsdom) |
-| Strawberry | Chocolate tag + API Mocking            |
+- background.jpg: https://pixabay.com/fr/photos/%C3%A9toiles-univers-2539245/
