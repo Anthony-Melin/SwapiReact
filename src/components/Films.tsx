@@ -4,11 +4,11 @@ type FilmsProps = PropsWithChildren<{ values: string[] }>
 
 const Films = ({ values, ...restProps }: FilmsProps) => {
     return (
-        <div datatest-id="films" {...restProps}>
+        <div data-testid="films" {...restProps}>
             <p>Films</p>
             <ul>
                 {values.map((value, index) => {
-                    return <li key={`film-${index}`} datatest-id={`film-${index}`}>{value}</li>
+                    return <li key={`film-${index}`} data-testid={`film-${index}`}>{value}</li>
                 })}
             </ul>
         </div>

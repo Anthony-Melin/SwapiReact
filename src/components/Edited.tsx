@@ -4,7 +4,7 @@ type EditedProps = PropsWithChildren<{ value: string }>
 
 const Edited = ({ value, ...restProps }: EditedProps) => {
     return (
-        <p datatest-id="edited" {...restProps}>
+        <p data-testid="edited" {...restProps}>
             Edited: {value}
         </p>
     )

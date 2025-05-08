@@ -4,7 +4,7 @@ type CreatedProps = PropsWithChildren<{ value: string }>
 
 const Created = ({ value, ...restProps }: CreatedProps) => {
     return (
-        <p datatest-id="created" {...restProps}>
+        <p data-testid="created" {...restProps}>
             Created: {value}
         </p>
     )

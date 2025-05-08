@@ -4,7 +4,7 @@ type SkinColorProps = PropsWithChildren<{ value: string }>
 
 const SkinColor = ({ value, ...restProps }: SkinColorProps) => {
     return (
-        <p datatest-id="skincolor" {...restProps}>
+        <p data-testid="skincolor" {...restProps}>
             Skin color: {value}
         </p>
     )

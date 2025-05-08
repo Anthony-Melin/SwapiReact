@@ -4,7 +4,7 @@ type GenderProps = PropsWithChildren<{ value: string }>
 
 const Gender = ({ value, ...restProps }: GenderProps) => {
     return (
-        <p datatest-id="gender" {...restProps}>
+        <p data-testid="gender" {...restProps}>
             Gender: {value}
         </p>
     )

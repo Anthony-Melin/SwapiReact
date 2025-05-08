@@ -4,7 +4,7 @@ type MassProps = PropsWithChildren<{ value: string }>
 
 const Mass = ({ value, ...restProps }: MassProps) => {
     return (
-        <p datatest-id="mass" {...restProps}>
+        <p data-testid="mass" {...restProps}>
             Mass: {value}
         </p>
     )

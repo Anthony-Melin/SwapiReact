@@ -4,7 +4,7 @@ type HomeWorldProps = PropsWithChildren<{ value: string }>
 
 const HomeWorld = ({ value, ...restProps }: HomeWorldProps) => {
     return (
-        <p datatest-id="homeworld" {...restProps}>
+        <p data-testid="homeworld" {...restProps}>
             HomeWorld: {value}
         </p>
     )
