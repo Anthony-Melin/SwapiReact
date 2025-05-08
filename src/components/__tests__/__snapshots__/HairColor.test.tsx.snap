@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HairColor > should match snapshot 1`] = `
+<p
+  data-testid="haircolor"
+>
+  Hair color: 
+  VALUE
+</p>
+`;
