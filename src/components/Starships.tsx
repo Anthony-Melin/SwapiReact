@@ -8,7 +8,7 @@ const Starships = ({ values, ...restProps }: StarshipsProps) => {
             <p>Starships</p>
             <ul>
                 {values.map((value, index) => {
-                    return <li datatest-id={`starship-${index}`}>{value}</li>
+                    return <li key={`starship-${index}`} datatest-id={`starship-${index}`}>{value}</li>
                 })}
             </ul>
         </div>

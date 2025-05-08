@@ -8,7 +8,7 @@ const Species = ({ values, ...restProps }: SpeciesProps) => {
             <p>Species</p>
             <ul>
                 {values.map((value, index) => {
-                    return <li datatest-id={`species-${index}`}>{value}</li>
+                    return <li key={`species-${index}`} datatest-id={`species-${index}`}>{value}</li>
                 })}
             </ul>
         </div>
