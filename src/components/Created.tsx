@@ -1,14 +1,3 @@
-import { PropsWithChildren } from 'react'
+import LabelDateFactory from "./__components__/LabelDateFactory.tsx";
 
-type CreatedProps = PropsWithChildren<{ value: string }>
-
-const Created = ({ value, ...restProps }: CreatedProps) => {
-    const date = new Date(value)
-    return (
-        <p data-testid="created" {...restProps}>
-            Created: {date.toLocaleString('fr-FR')}
-        </p>
-    )
-}
-
-export default Created
+export default LabelDateFactory('created', 'Created')

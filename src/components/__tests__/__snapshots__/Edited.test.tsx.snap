@@ -4,7 +4,8 @@ exports[`Edited > should match snapshot 1`] = `
 <p
   data-testid="edited"
 >
-  Edited: 
+  Edited
+  : 
   10/12/2014 00:50:51
 </p>
 `;
