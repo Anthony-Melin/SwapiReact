@@ -7,6 +7,10 @@ export const handlers = [
         return HttpResponse.json({
             people: `${import.meta.env.VITE_SWAPI_URL}/people/`,
             films: `${import.meta.env.VITE_SWAPI_URL}/films/`,
+            planets: `${import.meta.env.VITE_SWAPI_URL}/planets/`,
+            species: `${import.meta.env.VITE_SWAPI_URL}/species/`,
+            starships: `${import.meta.env.VITE_SWAPI_URL}/starships/`,
+            vehicles: `${import.meta.env.VITE_SWAPI_URL}/vehicles/`,
         })
     }),
     ...peopleHandlers,
