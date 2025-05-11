@@ -1,6 +1,10 @@
 import { http, HttpResponse } from 'msw'
 import peopleHandlers from './peopleHandlers.ts'
 import filmHandlers from './filmHandlers.ts'
+import planetsHandlers from './planetsHandlers.ts'
+import speciesHandlers from './speciesHandlers.ts'
+import starshipsHandlers from './starshipsHandlers.ts'
+import vehiclesHandlers from './vehiclesHandlers.ts'
 
 export const handlers = [
     http.get(import.meta.env.VITE_SWAPI_URL, () => {
@@ -15,4 +19,8 @@ export const handlers = [
     }),
     ...peopleHandlers,
     ...filmHandlers,
+    ...planetsHandlers,
+    ...speciesHandlers,
+    ...starshipsHandlers,
+    ...vehiclesHandlers,
 ]
