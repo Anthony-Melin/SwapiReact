@@ -13,7 +13,7 @@ import Created from '../components/Created.tsx'
 import Edited from '../components/Edited.tsx'
 import Films from "../components/Films.tsx";
 import Species from "../components/Species.tsx";
-import Vehicules from "../components/Vehicules.tsx";
+import Vehicles from "../components/Vehicles.tsx";
 import Starships from "../components/Starships.tsx";
 import Characters from "../components/Characters.tsx";
 import ReleaseDate from "../components/ReleaseDate.tsx";
@@ -73,7 +73,7 @@ const Description = () => {
                     } else if (key === 'species') {
                         return <Species key={key} values={values} />
                     } else if (key === 'vehicles') {
-                        return <Vehicules key={key} values={values} />
+                        return <Vehicles key={key} values={values} />
                     } else if (key === 'starships') {
                         return <Starships key={key} values={values} />
                     } else if (key === 'characters') {
