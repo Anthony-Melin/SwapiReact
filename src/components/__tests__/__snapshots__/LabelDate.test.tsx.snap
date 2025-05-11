@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LabelDate > should match snapshot 1`] = `
+<p
+  data-testid="testid"
+>
+  LABEL
+  : 
+  10/12/2014 00:50:51
+</p>
+`;
