@@ -15,6 +15,10 @@ import Films from "../components/Films.tsx";
 import Species from "../components/Species.tsx";
 import Vehicules from "../components/Vehicules.tsx";
 import Starships from "../components/Starships.tsx";
+import Characters from "../components/Characters.tsx";
+import ReleaseDate from "../components/ReleaseDate.tsx";
+import Producer from "../components/Producer.tsx";
+import Director from "../components/Director.tsx";
 
 export const clientLoader = async ({ request }: ClientLoaderFunctionArgs) => {
     const url = new URL(request.url)
@@ -52,6 +56,12 @@ const Description = () => {
                         return <Created key={key} value={value} />
                     } else if (key === 'edited') {
                         return <Edited key={key} value={value} />
+                    } else if (key === 'release_date') {
+                        return <ReleaseDate key={key} value={value} />
+                    } else if (key === 'producer') {
+                        return <Producer key={key} value={value} />
+                    } else if (key === 'director') {
+                        return <Director key={key} value={value} />
                     }
                 } else if (value instanceof Array) {
                     const values = value.filter((v) => typeof v === 'string')
@@ -63,6 +73,8 @@ const Description = () => {
                         return <Vehicules key={key} values={values} />
                     } else if (key === 'starships') {
                         return <Starships key={key} values={values} />
+                    } else if (key === 'characters') {
+                        return <Characters key={key} values={values} />
                     }
                 }
             })}
