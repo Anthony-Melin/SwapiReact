@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListValue > with empty list > should match snapshot 1`] = `
+<div
+  data-testid="testid"
+>
+  <p
+    data-testid="testid-title"
+  >
+    TITLE
+  </p>
+  <p
+    data-testid="testid-empty"
+  >
+    No 
+    ITEM
+     linked
+  </p>
+</div>
+`;
+
+exports[`ListValue > with filled list > should match snapshot 1`] = `
+<div
+  data-testid="testid"
+>
+  <p
+    data-testid="testid-title"
+  >
+    TITLE
+  </p>
+  <ul>
+    <li
+      data-testid="testid-0"
+    >
+      VALUE_1
+    </li>
+    <li
+      data-testid="testid-1"
+    >
+      VALUE_2
+    </li>
+  </ul>
+</div>
+`;
