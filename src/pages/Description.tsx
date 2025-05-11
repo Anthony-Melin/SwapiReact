@@ -1,11 +1,11 @@
-import { ClientLoaderFunctionArgs, useLoaderData } from 'react-router'
+import { LoaderFunctionArgs, useLoaderData } from 'react-router'
 import getFetch from '@api/getFetch.ts'
 import Details from '@api/types/details.ts'
 import LabelValue from '../components/LabelValue.tsx'
 import LabelDate from '../components/LabelDate.tsx'
 import ListValue from '../components/ListValue.tsx'
 
-export const clientLoader = async ({ request }: ClientLoaderFunctionArgs) => {
+export const clientLoader = async ({ request }: LoaderFunctionArgs) => {
     const url = new URL(request.url)
     return {
         details: await getFetch<Details>(url.pathname, request.signal),
@@ -17,7 +17,7 @@ const Description = () => {
         details: { name, title, ...restKeys },
     } = useLoaderData() as Awaited<ReturnType<typeof clientLoader>>
     return (
-        <main id="description-page">
+        <main id="description-page" data-testid="description-page">
             <h1>{name || title}</h1>
             {Object.entries(restKeys).map(([key, value]) => {
                 if (typeof value === 'string') {
@@ -187,7 +187,7 @@ const Description = () => {
                                 title="Starships"
                                 item="starship"
                                 values={values}
-                                testid="species"
+                                testid="starship"
                             />
                         )
                     } else if (key === 'characters') {
