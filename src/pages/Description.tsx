@@ -19,6 +19,7 @@ import Characters from "../components/Characters.tsx";
 import ReleaseDate from "../components/ReleaseDate.tsx";
 import Producer from "../components/Producer.tsx";
 import Director from "../components/Director.tsx";
+import Episode from "../components/Episode.tsx";
 
 export const clientLoader = async ({ request }: ClientLoaderFunctionArgs) => {
     const url = new URL(request.url)
@@ -63,6 +64,8 @@ const Description = () => {
                     } else if (key === 'director') {
                         return <Director key={key} value={value} />
                     }
+                } else if (typeof value === 'number') {
+                    return <Episode key={key} value={value.toString()} />
                 } else if (value instanceof Array) {
                     const values = value.filter((v) => typeof v === 'string')
                     if (key === 'films') {
