@@ -12,8 +12,6 @@ describe('Height', () => {
     })
 
     it('should have text', () => {
-        expect(screen.getByTestId('height')).toHaveTextContent(
-            'Height: VALUE'
-        )
+        expect(screen.getByTestId('height')).toHaveTextContent('Height: VALUE')
     })
 })

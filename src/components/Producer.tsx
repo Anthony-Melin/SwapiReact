@@ -1,3 +1,3 @@
-import LabelValueFactory from "./__components__/LabelValueFactory.tsx";
+import LabelValueFactory from './__components__/LabelValueFactory.tsx'
 
 export default LabelValueFactory('producer', 'Producer')

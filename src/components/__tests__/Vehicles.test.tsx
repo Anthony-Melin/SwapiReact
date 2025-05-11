@@ -17,7 +17,9 @@ describe('Vehicles', () => {
         })
 
         it('should have empty list label', () => {
-            expect(screen.getByTestId('vehicles-empty')).toHaveTextContent('No vehicles linked')
+            expect(screen.getByTestId('vehicles-empty')).toHaveTextContent(
+                'No vehicles linked'
+            )
         })
     })
 
@@ -35,8 +37,12 @@ describe('Vehicles', () => {
         })
 
         it('should contains elements', () => {
-            expect(screen.getByTestId('vehicles-0')).toHaveTextContent('VALUE_1')
-            expect(screen.getByTestId('vehicles-1')).toHaveTextContent('VALUE_2')
+            expect(screen.getByTestId('vehicles-0')).toHaveTextContent(
+                'VALUE_1'
+            )
+            expect(screen.getByTestId('vehicles-1')).toHaveTextContent(
+                'VALUE_2'
+            )
         })
     })
 })

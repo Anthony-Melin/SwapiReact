@@ -11,15 +11,15 @@ import Gender from '../components/Gender.tsx'
 import HomeWorld from '../components/HomeWorld.tsx'
 import Created from '../components/Created.tsx'
 import Edited from '../components/Edited.tsx'
-import Films from "../components/Films.tsx";
-import Species from "../components/Species.tsx";
-import Vehicles from "../components/Vehicles.tsx";
-import Starships from "../components/Starships.tsx";
-import Characters from "../components/Characters.tsx";
-import ReleaseDate from "../components/ReleaseDate.tsx";
-import Producer from "../components/Producer.tsx";
-import Director from "../components/Director.tsx";
-import Episode from "../components/Episode.tsx";
+import Films from '../components/Films.tsx'
+import Species from '../components/Species.tsx'
+import Vehicles from '../components/Vehicles.tsx'
+import Starships from '../components/Starships.tsx'
+import Characters from '../components/Characters.tsx'
+import ReleaseDate from '../components/ReleaseDate.tsx'
+import Producer from '../components/Producer.tsx'
+import Director from '../components/Director.tsx'
+import Episode from '../components/Episode.tsx'
 
 export const clientLoader = async ({ request }: ClientLoaderFunctionArgs) => {
     const url = new URL(request.url)

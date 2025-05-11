@@ -17,7 +17,9 @@ describe('Films', () => {
         })
 
         it('should have empty list label', () => {
-            expect(screen.getByTestId('films-empty')).toHaveTextContent('No films linked')
+            expect(screen.getByTestId('films-empty')).toHaveTextContent(
+                'No films linked'
+            )
         })
     })
 
