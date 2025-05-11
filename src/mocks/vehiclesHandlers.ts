@@ -17,7 +17,7 @@ export default [
     http.get(
         `${import.meta.env.VITE_SWAPI_URL}/vehicles/:id`,
         ({ params: { id } }) => {
-            if (id === '2') {
+            if (id === '4') {
                 return HttpResponse.json({
                     created: '2025-05-10T18:21:59.795Z',
                     edited: '2025-05-10T18:21:59.795Z',
