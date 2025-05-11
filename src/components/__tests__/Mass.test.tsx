@@ -12,8 +12,6 @@ describe('Mass', () => {
     })
 
     it('should have text', () => {
-        expect(screen.getByTestId('mass')).toHaveTextContent(
-            'Mass: VALUE'
-        )
+        expect(screen.getByTestId('mass')).toHaveTextContent('Mass: VALUE')
     })
 })

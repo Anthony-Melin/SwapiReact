@@ -12,8 +12,6 @@ describe('Gender', () => {
     })
 
     it('should have text', () => {
-        expect(screen.getByTestId('gender')).toHaveTextContent(
-            'Gender: VALUE'
-        )
+        expect(screen.getByTestId('gender')).toHaveTextContent('Gender: VALUE')
     })
 })

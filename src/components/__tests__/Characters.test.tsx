@@ -13,11 +13,15 @@ describe('Characters', () => {
         })
 
         it('should have a title', () => {
-            expect(screen.getByTestId('characters')).toHaveTextContent('Characters')
+            expect(screen.getByTestId('characters')).toHaveTextContent(
+                'Characters'
+            )
         })
 
         it('should have empty list label', () => {
-            expect(screen.getByTestId('characters-empty')).toHaveTextContent('No characters linked')
+            expect(screen.getByTestId('characters-empty')).toHaveTextContent(
+                'No characters linked'
+            )
         })
     })
 
@@ -31,12 +35,18 @@ describe('Characters', () => {
         })
 
         it('should have a title', () => {
-            expect(screen.getByTestId('characters')).toHaveTextContent('Characters')
+            expect(screen.getByTestId('characters')).toHaveTextContent(
+                'Characters'
+            )
         })
 
         it('should contains elements', () => {
-            expect(screen.getByTestId('characters-0')).toHaveTextContent('VALUE_1')
-            expect(screen.getByTestId('characters-1')).toHaveTextContent('VALUE_2')
+            expect(screen.getByTestId('characters-0')).toHaveTextContent(
+                'VALUE_1'
+            )
+            expect(screen.getByTestId('characters-1')).toHaveTextContent(
+                'VALUE_2'
+            )
         })
     })
 })

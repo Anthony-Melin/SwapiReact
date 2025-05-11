@@ -10,8 +10,8 @@ export const links = () => [
     {
         rel: 'stylesheet',
         type: 'text/css',
-        href: './index.css'
-    }
+        href: './index.css',
+    },
 ]
 
 export const meta = () => [

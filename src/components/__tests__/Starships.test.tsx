@@ -13,11 +13,15 @@ describe('Starships', () => {
         })
 
         it('should have a title', () => {
-            expect(screen.getByTestId('starships')).toHaveTextContent('Starships')
+            expect(screen.getByTestId('starships')).toHaveTextContent(
+                'Starships'
+            )
         })
 
         it('should have empty list label', () => {
-            expect(screen.getByTestId('starships-empty')).toHaveTextContent('No starships linked')
+            expect(screen.getByTestId('starships-empty')).toHaveTextContent(
+                'No starships linked'
+            )
         })
     })
 
@@ -31,12 +35,18 @@ describe('Starships', () => {
         })
 
         it('should have a title', () => {
-            expect(screen.getByTestId('starships')).toHaveTextContent('Starships')
+            expect(screen.getByTestId('starships')).toHaveTextContent(
+                'Starships'
+            )
         })
 
         it('should contains elements', () => {
-            expect(screen.getByTestId('starships-0')).toHaveTextContent('VALUE_1')
-            expect(screen.getByTestId('starships-1')).toHaveTextContent('VALUE_2')
+            expect(screen.getByTestId('starships-0')).toHaveTextContent(
+                'VALUE_1'
+            )
+            expect(screen.getByTestId('starships-1')).toHaveTextContent(
+                'VALUE_2'
+            )
         })
     })
 })

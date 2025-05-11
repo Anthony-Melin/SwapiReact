@@ -17,7 +17,9 @@ describe('Species', () => {
         })
 
         it('should have empty list label', () => {
-            expect(screen.getByTestId('species-empty')).toHaveTextContent('No species linked')
+            expect(screen.getByTestId('species-empty')).toHaveTextContent(
+                'No species linked'
+            )
         })
     })
 
