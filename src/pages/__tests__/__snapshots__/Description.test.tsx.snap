@@ -133,21 +133,21 @@ exports[`Description > people 1 > should match snapshot 1`] = `
     </ul>
   </div>
   <div
-    data-testid="species"
+    data-testid="starship"
   >
     <p
-      data-testid="species-title"
+      data-testid="starship-title"
     >
       Starships
     </p>
     <ul>
       <li
-        data-testid="species-0"
+        data-testid="starship-0"
       >
         https://swapi.dev/api/starships/12/
       </li>
       <li
-        data-testid="species-1"
+        data-testid="starship-1"
       >
         https://swapi.dev/api/starships/22/
       </li>
