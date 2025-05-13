@@ -1,0 +1,1062 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Explorer > films section - page 1 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    films
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    6
+  </h3>
+  <div
+    class="page-navigation"
+  />
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/films/1"
+      >
+        A New Hope
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/films/2"
+      >
+        The Empire Strikes Back
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/films/3"
+      >
+        Return of the Jedi
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/films/4"
+      >
+        The Phantom Menace
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/films/5"
+      >
+        Attack of the Clones
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/films/6"
+      >
+        Revenge of the Sith
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people > should match snapshot 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/people/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/1"
+      >
+        Luke Skywalker
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/2"
+      >
+        C-3PO
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/3"
+      >
+        R2-D2
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/4"
+      >
+        Darth Vader
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/5"
+      >
+        Leia Organa
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/6"
+      >
+        Owen Lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/7"
+      >
+        Beru Whitesun lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/8"
+      >
+        R5-D4
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/9"
+      >
+        Biggs Darklighter
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/10"
+      >
+        Obi-Wan Kenobi
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/people/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/1"
+      >
+        Luke Skywalker
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/2"
+      >
+        C-3PO
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/3"
+      >
+        R2-D2
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/4"
+      >
+        Darth Vader
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/5"
+      >
+        Leia Organa
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/6"
+      >
+        Owen Lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/7"
+      >
+        Beru Whitesun lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/8"
+      >
+        R5-D4
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/9"
+      >
+        Biggs Darklighter
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/10"
+      >
+        Obi-Wan Kenobi
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people section > url /people 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/people/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/1"
+      >
+        Luke Skywalker
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/2"
+      >
+        C-3PO
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/3"
+      >
+        R2-D2
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/4"
+      >
+        Darth Vader
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/5"
+      >
+        Leia Organa
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/6"
+      >
+        Owen Lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/7"
+      >
+        Beru Whitesun lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/8"
+      >
+        R5-D4
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/9"
+      >
+        Biggs Darklighter
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/10"
+      >
+        Obi-Wan Kenobi
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people section > url /people?page=1 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/people/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/1"
+      >
+        Luke Skywalker
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/2"
+      >
+        C-3PO
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/3"
+      >
+        R2-D2
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/4"
+      >
+        Darth Vader
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/5"
+      >
+        Leia Organa
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/6"
+      >
+        Owen Lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/7"
+      >
+        Beru Whitesun lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/8"
+      >
+        R5-D4
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/9"
+      >
+        Biggs Darklighter
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/10"
+      >
+        Obi-Wan Kenobi
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people section - page 1 > url /people 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/people/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/1"
+      >
+        Luke Skywalker
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/2"
+      >
+        C-3PO
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/3"
+      >
+        R2-D2
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/4"
+      >
+        Darth Vader
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/5"
+      >
+        Leia Organa
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/6"
+      >
+        Owen Lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/7"
+      >
+        Beru Whitesun lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/8"
+      >
+        R5-D4
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/9"
+      >
+        Biggs Darklighter
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/10"
+      >
+        Obi-Wan Kenobi
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people section - page 1 > url /people?page=1 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/people/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/1"
+      >
+        Luke Skywalker
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/2"
+      >
+        C-3PO
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/3"
+      >
+        R2-D2
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/4"
+      >
+        Darth Vader
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/5"
+      >
+        Leia Organa
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/6"
+      >
+        Owen Lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/7"
+      >
+        Beru Whitesun lars
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/8"
+      >
+        R5-D4
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/9"
+      >
+        Biggs Darklighter
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/10"
+      >
+        Obi-Wan Kenobi
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people section - page 2 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-prev"
+      href="/people/?page=1"
+    >
+      prev
+    </a>
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/people/?page=3"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/11"
+      >
+        Anakin Skywalker
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/12"
+      >
+        Wilhuff Tarkin
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/13"
+      >
+        Chewbacca
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/14"
+      >
+        Han Solo
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/15"
+      >
+        Greedo
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/16"
+      >
+        Jabba Desilijic Tiure
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/18"
+      >
+        Wedge Antilles
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/19"
+      >
+        Jek Tono Porkins
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/20"
+      >
+        Yoda
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/21"
+      >
+        Palpatine
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > people section - page 3 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    people
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    30
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-prev"
+      href="/people/?page=2"
+    >
+      prev
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/people/22"
+      >
+        Boba Fett
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/people/23"
+      >
+        IG-88
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-2"
+        href="/people/24"
+      >
+        Bossk
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-3"
+        href="/people/25"
+      >
+        Lando Calrissian
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-4"
+        href="/people/26"
+      >
+        Lobot
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-5"
+        href="/people/27"
+      >
+        Ackbar
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-6"
+        href="/people/28"
+      >
+        Mon Mothma
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-7"
+        href="/people/29"
+      >
+        Arvel Crynyd
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-8"
+        href="/people/30"
+      >
+        Wicket Systri Warrick
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-9"
+        href="/people/31"
+      >
+        Nien Nunb
+      </a>
+    </li>
+  </ul>
+</main>
+`;
