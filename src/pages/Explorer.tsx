@@ -5,7 +5,7 @@ import {
     useParams,
 } from 'react-router'
 import getFetch from '@api/getFetch.ts'
-import Explore from '@api/types/explore.ts'
+import Explore from '@api/explore.types.ts'
 import { urlParse } from '@api/utils.ts'
 
 export const clientLoader = async ({ request }: LoaderFunctionArgs) => {
