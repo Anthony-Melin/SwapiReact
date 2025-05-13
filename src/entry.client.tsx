@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { HydratedRouter } from 'react-router/dom'
 import { SectionContext } from '@hooks/useSections.tsx'
 import getFetch from '@api/getFetch.ts'
-import Root from '@api/types/root.tsx'
+import Root from '@api/root.types.ts'
 
 const enableMocking = async () => {
     if (import.meta.env.DEV) {

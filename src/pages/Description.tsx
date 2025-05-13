@@ -1,6 +1,6 @@
 import { LoaderFunctionArgs, useLoaderData } from 'react-router'
 import getFetch from '@api/getFetch.ts'
-import Details from '@api/types/details.ts'
+import Details from '@api/details.types.ts'
 import LabelValue from '../components/LabelValue.tsx'
 import LabelDate from '../components/LabelDate.tsx'
 import ListValue from '../components/ListValue.tsx'

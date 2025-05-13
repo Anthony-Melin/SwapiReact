@@ -17,6 +17,7 @@ export default defineConfig({
             include: ['**/src/**'],
             exclude: [
                 '**/*.test.*',
+                '**/*.types.*',
                 '.react-router/**',
                 'src/mocks/**',
                 './src/root.tsx',
