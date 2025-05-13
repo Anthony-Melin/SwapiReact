@@ -28,10 +28,17 @@ describe('Explorer', () => {
         it.for(['/people', '/people?page=1'])(`url %s`, async (url) => {
             renderExplorer(url)
 
-            expect(await screen.findByTestId('section-title')).toHaveTextContent('people')
-            expect(await screen.findByTestId('section-count')).toHaveTextContent('Results: 30')
+            expect(
+                await screen.findByTestId('section-title')
+            ).toHaveTextContent('people')
+            expect(
+                await screen.findByTestId('section-count')
+            ).toHaveTextContent('Results: 30')
             expect(screen.queryByTestId('page-prev')).toBeNull()
-            expect(await screen.findByTestId('page-next')).toHaveAttribute('href', '/people/?page=2')
+            expect(await screen.findByTestId('page-next')).toHaveAttribute(
+                'href',
+                '/people/?page=2'
+            )
 
             expect(await screen.findAllByTestId(/item-\d/)).toHaveLength(10)
             await expectLink('item-0', '/people/1', 'Luke Skywalker')
@@ -52,10 +59,20 @@ describe('Explorer', () => {
     it('people section - page 2', async () => {
         renderExplorer('/people?page=2')
 
-        expect(await screen.findByTestId('section-title')).toHaveTextContent('people')
-        expect(await screen.findByTestId('section-count')).toHaveTextContent('Results: 30')
-        expect(await screen.findByTestId('page-prev')).toHaveAttribute('href', '/people/?page=1')
-        expect(await screen.findByTestId('page-next')).toHaveAttribute('href', '/people/?page=3')
+        expect(await screen.findByTestId('section-title')).toHaveTextContent(
+            'people'
+        )
+        expect(await screen.findByTestId('section-count')).toHaveTextContent(
+            'Results: 30'
+        )
+        expect(await screen.findByTestId('page-prev')).toHaveAttribute(
+            'href',
+            '/people/?page=1'
+        )
+        expect(await screen.findByTestId('page-next')).toHaveAttribute(
+            'href',
+            '/people/?page=3'
+        )
 
         expect(await screen.findAllByTestId(/item-\d/)).toHaveLength(10)
         await expectLink('item-0', '/people/11', 'Anakin Skywalker')
@@ -75,9 +92,16 @@ describe('Explorer', () => {
     it('people section - page 3', async () => {
         renderExplorer('/people?page=3')
 
-        expect(await screen.findByTestId('section-title')).toHaveTextContent('people')
-        expect(await screen.findByTestId('section-count')).toHaveTextContent('Results: 30')
-        expect(await screen.findByTestId('page-prev')).toHaveAttribute('href', '/people/?page=2')
+        expect(await screen.findByTestId('section-title')).toHaveTextContent(
+            'people'
+        )
+        expect(await screen.findByTestId('section-count')).toHaveTextContent(
+            'Results: 30'
+        )
+        expect(await screen.findByTestId('page-prev')).toHaveAttribute(
+            'href',
+            '/people/?page=2'
+        )
         expect(screen.queryByTestId('page-next')).toBeNull()
 
         expect(await screen.findAllByTestId(/item-\d/)).toHaveLength(10)
@@ -96,17 +120,24 @@ describe('Explorer', () => {
     })
 
     describe('people section - unknown page', async () => {
-        it.for(['/people?page=4', '/people?page=-4', '/people?page=foo'])(`url %s`, async (url) => {
-            renderExplorer(url)
-            expect(await screen.findByTestId('error')).toBeVisible()
-        })
+        it.for(['/people?page=4', '/people?page=-4', '/people?page=foo'])(
+            `url %s`,
+            async (url) => {
+                renderExplorer(url)
+                expect(await screen.findByTestId('error')).toBeVisible()
+            }
+        )
     })
 
     it('films section - page 1', async () => {
         renderExplorer('/films')
 
-        expect(await screen.findByTestId('section-title')).toHaveTextContent('films')
-        expect(await screen.findByTestId('section-count')).toHaveTextContent('Results: 6')
+        expect(await screen.findByTestId('section-title')).toHaveTextContent(
+            'films'
+        )
+        expect(await screen.findByTestId('section-count')).toHaveTextContent(
+            'Results: 6'
+        )
         expect(screen.queryByTestId('page-prev')).toBeNull()
         expect(screen.queryByTestId('page-next')).toBeNull()
 
