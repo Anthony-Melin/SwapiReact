@@ -2,7 +2,7 @@ import { Link } from 'react-router'
 
 function Home() {
     return (
-        <main id="home-page">
+        <main id="home-page" data-testid="home-page">
             <h1>Swapi React</h1>
             <div id="crawl-container">
                 <div id="crawl-content">
@@ -42,7 +42,9 @@ function Home() {
                         la saga culte.
                     </p>
                     <p>
-                        <Link to="/people">Commencer l'exploration</Link>
+                        <Link data-testid="to-explorer" to="/people">
+                            Commencer l'exploration
+                        </Link>
                     </p>
                 </div>
             </div>
