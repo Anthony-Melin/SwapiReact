@@ -196,4 +196,51 @@ describe('Description', () => {
             'https://swapi.dev/api/people/74'
         )
     })
+
+    it('should render starship 2', async () => {
+        renderDescription('/starships/2')
+
+        expect(await screen.findByTestId('consumables')).toHaveTextContent('Consumables: 1 year')
+
+        expect(await screen.findByTestId('cargo_capacity')).toHaveTextContent('Cargo capacity: 3000000')
+
+        expect(await screen.findByTestId('passengers')).toHaveTextContent('Passengers: 600')
+
+        expect(await screen.findByTestId('max_atmosphering_speed')).toHaveTextContent('Max atmosphering speed: 950')
+
+        expect(await screen.findByTestId('crew')).toHaveTextContent('Crew: 30-165')
+
+        expect(await screen.findByTestId('length')).toHaveTextContent('Length: 150')
+
+        expect(await screen.findByTestId('model')).toHaveTextContent('Model: CR90 corvette')
+
+        expect(await screen.findByTestId('cost_in_credits')).toHaveTextContent('Cost in credits: 3500000')
+
+        expect(await screen.findByTestId('manufacturer')).toHaveTextContent('Manufacturer: Corellian Engineering Corporation')
+
+        expect(await screen.findByTestId('starship_class')).toHaveTextContent('Starship class: corvette')
+
+        expect(await screen.findByTestId('hyperdrive_rating')).toHaveTextContent('Hyperdrive rating: 2.0')
+
+        expect(await screen.findByTestId('created')).toHaveTextContent(
+            'Created: 10/05/2025 20:21:59'
+        )
+
+        expect(await screen.findByTestId('edited')).toHaveTextContent(
+            'Edited: 10/05/2025 20:21:59'
+        )
+
+        expect(await screen.findByTestId('film-title')).toHaveTextContent(
+            'Films'
+        )
+        expect(await screen.findByTestId('film-0')).toHaveTextContent(
+            'https://swapi.dev/api/films/1'
+        )
+        expect(await screen.findByTestId('film-1')).toHaveTextContent(
+            'https://swapi.dev/api/films/3'
+        )
+        expect(await screen.findByTestId('film-2')).toHaveTextContent(
+            'https://swapi.dev/api/films/6'
+        )
+    })
 })
