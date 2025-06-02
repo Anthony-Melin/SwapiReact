@@ -243,4 +243,46 @@ describe('Description', () => {
             'https://swapi.dev/api/films/6'
         )
     })
+
+    it('should render vehicle 4', async () => {
+        renderDescription('/vehicles/4')
+
+        expect(await screen.findByTestId('consumables')).toHaveTextContent('Consumables: 2 months')
+
+        expect(await screen.findByTestId('cargo_capacity')).toHaveTextContent('Cargo capacity: 50000')
+
+        expect(await screen.findByTestId('passengers')).toHaveTextContent('Passengers: 30')
+
+        expect(await screen.findByTestId('max_atmosphering_speed')).toHaveTextContent('Max atmosphering speed: 30')
+
+        expect(await screen.findByTestId('crew')).toHaveTextContent('Crew: 46')
+
+        expect(await screen.findByTestId('length')).toHaveTextContent('Length: 36.8')
+
+        expect(await screen.findByTestId('model')).toHaveTextContent('Model: Digger Crawler')
+
+        expect(await screen.findByTestId('cost_in_credits')).toHaveTextContent('Cost in credits: 150000')
+
+        expect(await screen.findByTestId('manufacturer')).toHaveTextContent('Manufacturer: Corellia Mining Corporation')
+
+        expect(await screen.findByTestId('vehicle_class')).toHaveTextContent('Vehicle class: wheeled')
+
+        expect(await screen.findByTestId('created')).toHaveTextContent(
+            'Created: 10/05/2025 20:21:59'
+        )
+
+        expect(await screen.findByTestId('edited')).toHaveTextContent(
+            'Edited: 10/05/2025 20:21:59'
+        )
+
+        expect(await screen.findByTestId('film-title')).toHaveTextContent(
+            'Films'
+        )
+        expect(await screen.findByTestId('film-0')).toHaveTextContent(
+            'https://swapi.dev/api/films/1'
+        )
+        expect(await screen.findByTestId('film-1')).toHaveTextContent(
+            'https://swapi.dev/api/films/5'
+        )
+    })
 })
