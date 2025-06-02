@@ -118,4 +118,32 @@ describe('Description', () => {
             'Edited: 10/05/2025 20:21:59'
         )
     })
+
+    it('should render planet 1', async () => {
+        renderDescription('/planets/1')
+
+        expect(await screen.findByTestId('climate')).toHaveTextContent('Climate: arid')
+
+        expect(await screen.findByTestId('surface_water')).toHaveTextContent('Surface has water: yes')
+
+        expect(await screen.findByTestId('diameter')).toHaveTextContent('Diameter: 10465')
+
+        expect(await screen.findByTestId('rotation_period')).toHaveTextContent('Period of rotation: 23')
+
+        expect(await screen.findByTestId('terrain')).toHaveTextContent('Terrain: desert')
+
+        expect(await screen.findByTestId('gravity')).toHaveTextContent('Gravity: 1 standard')
+
+        expect(await screen.findByTestId('orbital_period')).toHaveTextContent('Orbital period: 304')
+
+        expect(await screen.findByTestId('population')).toHaveTextContent('Population: 200000')
+
+        expect(await screen.findByTestId('created')).toHaveTextContent(
+            'Created: 10/05/2025 20:21:59'
+        )
+
+        expect(await screen.findByTestId('edited')).toHaveTextContent(
+            'Edited: 10/05/2025 20:21:59'
+        )
+    })
 })
