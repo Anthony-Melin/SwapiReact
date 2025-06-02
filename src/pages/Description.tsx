@@ -283,6 +283,105 @@ const Description = () => {
                                 testid="average_height"
                             />
                         )
+                    } else if (key === 'consumables') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Consumables"
+                                value={value}
+                                testid="consumables"
+                            />
+                        )
+                    } else if (key === 'cargo_capacity') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Cargo capacity"
+                                value={value}
+                                testid="cargo_capacity"
+                            />
+                        )
+                    } else if (key === 'passengers') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Passengers"
+                                value={value}
+                                testid="passengers"
+                            />
+                        )
+                    } else if (key === 'max_atmosphering_speed') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Max atmosphering speed"
+                                value={value}
+                                testid="max_atmosphering_speed"
+                            />
+                        )
+                    } else if (key === 'crew') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Crew"
+                                value={value}
+                                testid="crew"
+                            />
+                        )
+                    } else if (key === 'length') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Length"
+                                value={value}
+                                testid="length"
+                            />
+                        )
+                    } else if (key === 'model') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Model"
+                                value={value}
+                                testid="model"
+                            />
+                        )
+                    } else if (key === 'cost_in_credits') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Cost in credits"
+                                value={value}
+                                testid="cost_in_credits"
+                            />
+                        )
+                    } else if (key === 'manufacturer') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Manufacturer"
+                                value={value}
+                                testid="manufacturer"
+                            />
+                        )
+                    } else if (key === 'starship_class') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Starship class"
+                                value={value}
+                                testid="starship_class"
+                            />
+                        )
+                    } else if (key === 'hyperdrive_rating') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Hyperdrive rating"
+                                value={value}
+                                testid="hyperdrive_rating"
+                            />
+                        )
                     }
                 } else if (typeof value === 'number') {
                     return (
