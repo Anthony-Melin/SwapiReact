@@ -10,9 +10,9 @@ const Navigation = () => {
                 <Link to="/">
                     <strong>SwapiReact</strong>
                 </Link>
-                {Object.entries(sections).map(([sectionLabel, sectionUrl]) => {
+                {Object.entries(sections).map(([sectionLabel, sectionUrl], index) => {
                     return (
-                        <Link to={urlParse(sectionUrl)} key={sectionLabel}>
+                        <Link to={urlParse(sectionUrl)} key={sectionLabel} data-testid={`section-${index}`}>
                             {sectionLabel}
                         </Link>
                     )
