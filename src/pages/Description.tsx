@@ -211,6 +211,78 @@ const Description = () => {
                                 testid="population"
                             />
                         )
+                    } else if (key === 'classification') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Classification"
+                                value={value}
+                                testid="classification"
+                            />
+                        )
+                    } else if (key === 'designation') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Designation"
+                                value={value}
+                                testid="designation"
+                            />
+                        )
+                    } else if (key === 'eye_colors') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Eye colors"
+                                value={value}
+                                testid="eye_colors"
+                            />
+                        )
+                    } else if (key === 'skin_colors') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Skin colors"
+                                value={value}
+                                testid="skin_colors"
+                            />
+                        )
+                    } else if (key === 'language') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Language"
+                                value={value}
+                                testid="language"
+                            />
+                        )
+                    } else if (key === 'hair_colors') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Hair colors"
+                                value={value}
+                                testid="hair_colors"
+                            />
+                        )
+                    } else if (key === 'average_lifespan') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Average lifespan"
+                                value={value}
+                                testid="average_lifespan"
+                            />
+                        )
+                    } else if (key === 'average_height') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Average height"
+                                value={value}
+                                testid="average_height"
+                            />
+                        )
                     }
                 } else if (typeof value === 'number') {
                     return (
@@ -271,6 +343,16 @@ const Description = () => {
                                 item="character"
                                 values={values}
                                 testid="character"
+                            />
+                        )
+                    } else if (key === 'people') {
+                        return (
+                            <ListValue
+                                key={key}
+                                title="Peoples"
+                                item="people"
+                                values={values}
+                                testid="people"
                             />
                         )
                     }

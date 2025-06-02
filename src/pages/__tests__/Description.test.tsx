@@ -146,4 +146,54 @@ describe('Description', () => {
             'Edited: 10/05/2025 20:21:59'
         )
     })
+
+    it('should render species 1', async () => {
+        renderDescription('/species/1')
+
+        expect(await screen.findByTestId('classification')).toHaveTextContent('Classification: mammal')
+
+        expect(await screen.findByTestId('designation')).toHaveTextContent('Designation: sentient')
+
+        expect(await screen.findByTestId('eye_colors')).toHaveTextContent('Eye colors: brown, blue, green, hazel, grey, amber')
+
+        expect(await screen.findByTestId('skin_colors')).toHaveTextContent('Skin colors: caucasian, black, asian, hispanic')
+
+        expect(await screen.findByTestId('language')).toHaveTextContent('Language: Galactic Basic')
+
+        expect(await screen.findByTestId('hair_colors')).toHaveTextContent('Hair colors: blonde, brown, black, red')
+
+        expect(await screen.findByTestId('homeworld')).toHaveTextContent('Home world: https://swapi.dev/api/planets/9')
+
+        expect(await screen.findByTestId('average_lifespan')).toHaveTextContent('Average lifespan: 120')
+
+        expect(await screen.findByTestId('average_height')).toHaveTextContent('Average height: 180')
+
+        expect(await screen.findByTestId('created')).toHaveTextContent(
+            'Created: 10/05/2025 20:21:59'
+        )
+
+        expect(await screen.findByTestId('edited')).toHaveTextContent(
+            'Edited: 10/05/2025 20:21:59'
+        )
+
+        expect(await screen.findByTestId('people-title')).toHaveTextContent(
+            'Peoples'
+        )
+
+        expect(await screen.findByTestId('people-0')).toHaveTextContent(
+            'https://swapi.dev/api/people/66'
+        )
+
+        expect(await screen.findByTestId('people-1')).toHaveTextContent(
+            'https://swapi.dev/api/people/67'
+        )
+
+        expect(await screen.findByTestId('people-2')).toHaveTextContent(
+            'https://swapi.dev/api/people/68'
+        )
+
+        expect(await screen.findByTestId('people-3')).toHaveTextContent(
+            'https://swapi.dev/api/people/74'
+        )
+    })
 })
