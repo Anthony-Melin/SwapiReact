@@ -138,6 +138,79 @@ const Description = () => {
                                 testid="director"
                             />
                         )
+                    } else if (key === 'climate') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Climate"
+                                value={value}
+                                testid="climate"
+                            />
+                        )
+                    } else if (key === 'surface_water') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Surface has water"
+                                value={value}
+                                remap={{'1': 'yes', '0': 'no'}}
+                                testid="surface_water"
+                            />
+                        )
+                    } else if (key === 'diameter') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Diameter"
+                                value={value}
+                                testid="diameter"
+                            />
+                        )
+                    } else if (key === 'rotation_period') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Period of rotation"
+                                value={value}
+                                testid="rotation_period"
+                            />
+                        )
+                    } else if (key === 'terrain') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Terrain"
+                                value={value}
+                                testid="terrain"
+                            />
+                        )
+                    } else if (key === 'gravity') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Gravity"
+                                value={value}
+                                testid="gravity"
+                            />
+                        )
+                    } else if (key === 'orbital_period') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Orbital period"
+                                value={value}
+                                testid="orbital_period"
+                            />
+                        )
+                    } else if (key === 'population') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Population"
+                                value={value}
+                                testid="population"
+                            />
+                        )
                     }
                 } else if (typeof value === 'number') {
                     return (
