@@ -382,6 +382,15 @@ const Description = () => {
                                 testid="hyperdrive_rating"
                             />
                         )
+                    } else if (key === 'vehicle_class') {
+                        return (
+                            <LabelValue
+                                key={key}
+                                label="Vehicle class"
+                                value={value}
+                                testid="vehicle_class"
+                            />
+                        )
                     }
                 } else if (typeof value === 'number') {
                     return (
