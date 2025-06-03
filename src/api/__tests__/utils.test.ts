@@ -6,6 +6,9 @@ describe('utils', () => {
         ['https://swapi.dev/api/people/', '/people'],
         ['https://swapi.dev/api/people', '/people'],
         ['https://swapi.dev/api/people/1', '/people/1'],
+        ['/api/people/1', '/people/1'],
+        ['api/people/1', '/people/1'],
+        ['/people/1', '/people/1'],
     ])('urlParse', (api, front) => {
         test(`transform ${api} to ${front}`, () => {
             expect(urlParse(api)).toBe(front)
@@ -13,13 +16,21 @@ describe('utils', () => {
     })
 
     describe.each([
-        ['/people', 'https://swapi.dev/api/people'],
-        ['people', 'https://swapi.dev/api/people'],
-        ['/people/1', 'https://swapi.dev/api/people/1'],
-        ['people/1', 'https://swapi.dev/api/people/1'],
+        ['/', '/baseurl/api.json'],
+        ['/people', '/baseurl/api/people.json'],
+        ['people', '/baseurl/api/people.json'],
+        ['/people/', '/baseurl/api/people.json'],
+        ['/people/1', '/baseurl/api/people/1.json'],
+        ['people/1', '/baseurl/api/people/1.json'],
+        ['/people/1/', '/baseurl/api/people/1.json'],
+        ['/people?page=1', '/baseurl/api/people/page/1.json'],
+        ['people?page=1', '/baseurl/api/people/page/1.json'],
+        ['/people/?page=1', '/baseurl/api/people/page/1.json'],
+        ['/api/people/1', '/baseurl/api/people/1.json'],
+        ['api/people/1', '/baseurl/api/people/1.json'],
     ])('urlFormat', (front, api) => {
         test(`transform ${front} to ${api}`, () => {
-            expect(urlFormat(front)).toBe(api)
+            expect(urlFormat('/baseurl/', front)).toBe(api)
         })
     })
 })
