@@ -1,10 +1,10 @@
 import { urlFormat } from '@api/utils.ts'
 
 async function getFetch<T>(
-    url: string = '',
+    url: string = '/',
     signal: AbortSignal | null = null
 ) {
-    const response = await fetch(urlFormat(url), {
+    const response = await fetch(urlFormat(import.meta.env.VITE_BASE_URL, url), {
         signal: signal,
     })
     if (!response.ok) {
