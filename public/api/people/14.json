@@ -1,0 +1,25 @@
+{
+	"name": "Han Solo",
+	"height": "180",
+	"mass": "80",
+	"hair_color": "brown",
+	"skin_color": "fair",
+	"eye_color": "brown",
+	"birth_year": "29BBY",
+	"gender": "male",
+	"homeworld": "/api/planets/22",
+	"films": [
+		"/api/films/1",
+		"/api/films/2",
+		"/api/films/3"
+	],
+	"species": [],
+	"vehicles": [],
+	"starships": [
+		"/api/starships/10",
+		"/api/starships/22"
+	],
+	"created": "2014-12-10T16:49:14.582000Z",
+	"edited": "2014-12-20T21:17:50.334000Z",
+	"url": "/api/people/14"
+}

@@ -1,0 +1,31 @@
+{
+  "count": 6,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "title": "A New Hope",
+      "url": "/api/films/1"
+    },
+    {
+      "title": "The Empire Strikes Back",
+      "url": "/api/films/2"
+    },
+    {
+      "title": "Return of the Jedi",
+      "url": "/api/films/3"
+    },
+    {
+      "title": "The Phantom Menace",
+      "url": "/api/films/4"
+    },
+    {
+      "title": "Attack of the Clones",
+      "url": "/api/films/5"
+    },
+    {
+      "title": "Revenge of the Sith",
+      "url": "/api/films/6"
+    }
+  ]
+}

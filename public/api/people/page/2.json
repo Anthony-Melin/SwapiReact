@@ -1,0 +1,127 @@
+{
+  "count": 79,
+  "next": "/api/people?page=3",
+  "previous": "/api/people?page=1",
+  "results": [
+    {
+      "name": "Padmé Amidala",
+      "url": "/api/people/35"
+    },
+    {
+      "name": "Jar Jar Binks",
+      "url": "/api/people/36"
+    },
+    {
+      "name": "Roos Tarpals",
+      "url": "/api/people/37"
+    },
+    {
+      "name": "Rugor Nass",
+      "url": "/api/people/38"
+    },
+    {
+      "name": "Ric Olié",
+      "url": "/api/people/39"
+    },
+    {
+      "name": "Watto",
+      "url": "/api/people/40"
+    },
+    {
+      "name": "Sebulba",
+      "url": "/api/people/41"
+    },
+    {
+      "name": "Quarsh Panaka",
+      "url": "/api/people/42"
+    },
+    {
+      "name": "Shmi Skywalker",
+      "url": "/api/people/43"
+    },
+    {
+      "name": "Darth Maul",
+      "url": "/api/people/44"
+    },
+    {
+      "name": "Bib Fortuna",
+      "url": "/api/people/45"
+    },
+    {
+      "name": "Ayla Secura",
+      "url": "/api/people/46"
+    },
+    {
+      "name": "Ratts Tyerel",
+      "url": "/api/people/47"
+    },
+    {
+      "name": "Dud Bolt",
+      "url": "/api/people/48"
+    },
+    {
+      "name": "Gasgano",
+      "url": "/api/people/49"
+    },
+    {
+      "name": "Ben Quadinaros",
+      "url": "/api/people/50"
+    },
+    {
+      "name": "Mace Windu",
+      "url": "/api/people/51"
+    },
+    {
+      "name": "Ki-Adi-Mundi",
+      "url": "/api/people/52"
+    },
+    {
+      "name": "Kit Fisto",
+      "url": "/api/people/53"
+    },
+    {
+      "name": "Eeth Koth",
+      "url": "/api/people/54"
+    },
+    {
+      "name": "Adi Gallia",
+      "url": "/api/people/55"
+    },
+    {
+      "name": "Saesee Tiin",
+      "url": "/api/people/56"
+    },
+    {
+      "name": "Yarael Poof",
+      "url": "/api/people/57"
+    },
+    {
+      "name": "Plo Koon",
+      "url": "/api/people/58"
+    },
+    {
+      "name": "Mas Amedda",
+      "url": "/api/people/59"
+    },
+    {
+      "name": "Gregar Typho",
+      "url": "/api/people/60"
+    },
+    {
+      "name": "Cordé",
+      "url": "/api/people/61"
+    },
+    {
+      "name": "Cliegg Lars",
+      "url": "/api/people/62"
+    },
+    {
+      "name": "Poggle the Lesser",
+      "url": "/api/people/63"
+    },
+    {
+      "name": "Luminara Unduli",
+      "url": "/api/people/64"
+    }
+  ]
+}

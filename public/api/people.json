@@ -1,0 +1,127 @@
+{
+  "count": 79,
+  "next": "/api/explorer/people?page=2",
+  "previous": null,
+  "results": [
+    {
+      "name": "Luke Skywalker",
+      "url": "/api/people/2"
+    },
+    {
+      "name": "R2-D2",
+      "url": "/api/people/4"
+    },
+    {
+      "name": "Leia Organa",
+      "url": "/api/people/6"
+    },
+    {
+      "name": "Beru Whitesun lars",
+      "url": "/api/people/7"
+    },
+    {
+      "name": "R5-D4",
+      "url": "/api/people/8"
+    },
+    {
+      "name": "Biggs Darklighter",
+      "url": "/api/people/9"
+    },
+    {
+      "name": "Obi-Wan Kenobi",
+      "url": "/api/people/10"
+    },
+    {
+      "name": "Anakin Skywalker",
+      "url": "/api/people/11"
+    },
+    {
+      "name": "Wilhuff Tarkin",
+      "url": "/api/people/12"
+    },
+    {
+      "name": "Chewbacca",
+      "url": "/api/people/13"
+    },
+    {
+      "name": "Han Solo",
+      "url": "/api/people/14"
+    },
+    {
+      "name": "Greedo",
+      "url": "/api/people/15"
+    },
+    {
+      "name": "Jabba Desilijic Tiure",
+      "url": "/api/people/16"
+    },
+    {
+      "name": "Wedge Antilles",
+      "url": "/api/people/18"
+    },
+    {
+      "name": "Jek Tono Porkins",
+      "url": "/api/people/19"
+    },
+    {
+      "name": "Yoda",
+      "url": "/api/people/20"
+    },
+    {
+      "name": "Palpatine",
+      "url": "/api/people/21"
+    },
+    {
+      "name": "Boba Fett",
+      "url": "/api/people/22"
+    },
+    {
+      "name": "IG-88",
+      "url": "/api/people/23"
+    },
+    {
+      "name": "Bossk",
+      "url": "/api/people/24"
+    },
+    {
+      "name": "Lando Calrissian",
+      "url": "/api/people/25"
+    },
+    {
+      "name": "Lobot",
+      "url": "/api/people/26"
+    },
+    {
+      "name": "Ackbar",
+      "url": "/api/people/27"
+    },
+    {
+      "name": "Mon Mothma",
+      "url": "/api/people/28"
+    },
+    {
+      "name": "Arvel Crynyd",
+      "url": "/api/people/29"
+    },
+    {
+      "name": "Wicket Systri Warrick",
+      "url": "/api/people/30"
+    },
+    {
+      "name": "Nien Nunb",
+      "url": "/api/people/31"
+    },
+    {
+      "name": "Qui-Gon Jinn",
+      "url": "/api/people/32"
+    },
+    {
+      "name": "Nute Gunray",
+      "url": "/api/people/33"
+    },
+    {
+      "name": "Finis Valorum",
+      "url": "/api/people/34"
+    }
+  ]
+}

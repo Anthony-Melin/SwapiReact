@@ -1,0 +1,22 @@
+{
+	"name": "Plo Koon",
+	"height": "188",
+	"mass": "80",
+	"hair_color": "none",
+	"skin_color": "orange",
+	"eye_color": "black",
+	"birth_year": "22BBY",
+	"gender": "male",
+	"homeworld": "/api/planets/49",
+	"films": [
+		"/api/films/4",
+		"/api/films/5",
+		"/api/films/6"
+	],
+	"species": ["/api/species/26"],
+	"vehicles": [],
+	"starships": ["/api/starships/48"],
+	"created": "2014-12-20T10:49:19.859000Z",
+	"edited": "2014-12-20T21:17:50.439000Z",
+	"url": "/api/people/58"
+}

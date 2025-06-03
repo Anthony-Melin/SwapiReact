@@ -1,0 +1,31 @@
+{
+  "count": 36,
+  "next": null,
+  "previous": "/api/starships?page=1",
+  "results": [
+    {
+      "name": "Naboo star skiff",
+      "url": "/api/starships/64"
+    },
+    {
+      "name": "Jedi Interceptor",
+      "url": "/api/starships/65"
+    },
+    {
+      "name": "arc-170",
+      "url": "/api/starships/66"
+    },
+    {
+      "name": "Banking clan frigte",
+      "url": "/api/starships/68"
+    },
+    {
+      "name": "Belbullab-22 starfighter",
+      "url": "/api/starships/74"
+    },
+    {
+      "name": "V-wing",
+      "url": "/api/starships/75"
+    }
+  ]
+}
