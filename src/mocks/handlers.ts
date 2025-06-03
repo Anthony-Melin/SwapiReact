@@ -1,10 +1,4 @@
 import { http, HttpResponse } from 'msw'
-import peopleHandlers from './peopleHandlers.ts'
-import filmHandlers from './filmHandlers.ts'
-import planetsHandlers from './planetsHandlers.ts'
-import speciesHandlers from './speciesHandlers.ts'
-import starshipsHandlers from './starshipsHandlers.ts'
-import vehiclesHandlers from './vehiclesHandlers.ts'
 
 const mocks = {
     root: {
@@ -140,10 +134,4 @@ export const handlers = [
     http.get('/api/section1/1.json', () => HttpResponse.json(mocks.section1.item1)),
     http.get('/api/section1/2.json', () => HttpResponse.json(mocks.section1.item2)),
     http.all('/api/*', () => new HttpResponse(null, { status: 404 })),
-    ...peopleHandlers,
-    ...filmHandlers,
-    ...planetsHandlers,
-    ...speciesHandlers,
-    ...starshipsHandlers,
-    ...vehiclesHandlers,
 ]
