@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "react-router dev",
-        "dev:mock": "react-router dev VITE_MSW=1",
+        "dev:mock": "VITE_MSW=1 react-router dev",
         "build": "tsc -b && react-router build",
         "lint": "eslint .",
         "prettier": "prettier . --write",
