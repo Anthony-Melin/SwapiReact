@@ -6,7 +6,7 @@ import getFetch from '@api/getFetch.ts'
 import Root from '@api/root.types.ts'
 
 const enableMocking = async () => {
-    if (import.meta.env.DEV) {
+    if (import.meta.env.VITE_MSW) {
         const { worker } = await import('./mocks/browser')
         return worker.start()
     }
