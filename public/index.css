@@ -21,7 +21,7 @@ body {
     color: var(--yellow);
     background-color: var(--dark-grey);
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    background-image: url('/background.jpg');
+    background-image: url('./background.jpg');
 }
 
 header {
