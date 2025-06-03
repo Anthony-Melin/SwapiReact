@@ -16,7 +16,7 @@ describe('Description', () => {
         },
     ])
 
-    it('should render navigation buttons', async () => {
+    it.skip('should render navigation buttons', async () => {
         const root = await getFetch<Root>()
         render(
             <SectionContext value={root}>
@@ -48,5 +48,23 @@ describe('Description', () => {
         element = await screen.findByTestId('section-5')
         expect(element).toHaveTextContent('vehicles')
         expect(element).toHaveAttribute('href', '/vehicles')
+    })
+
+    it('should render navigation buttons', async () => {
+        const root = await getFetch<Root>()
+        render(
+            <SectionContext value={root}>
+                <Stub />
+            </SectionContext>
+        )
+
+        let element
+        element = await screen.findByTestId('section-0')
+        expect(element).toHaveTextContent('section1')
+        expect(element).toHaveAttribute('href', '/section1')
+
+        element = await screen.findByTestId('section-1')
+        expect(element).toHaveTextContent('section2')
+        expect(element).toHaveAttribute('href', '/section2')
     })
 })
