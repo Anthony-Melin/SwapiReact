@@ -1060,3 +1060,153 @@ exports[`Explorer > people section - page 3 1`] = `
   </ul>
 </main>
 `;
+
+exports[`Explorer > section 1 - page 1 > url /section1 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    section1
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    4
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/section1/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/section1/1"
+      >
+        Item 1 of section 1
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/section1/2"
+      >
+        Item 2 of section 1
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > section 1 - page 1 > url /section1?page=1 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    section1
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    4
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-next"
+      href="/section1/?page=2"
+    >
+      next
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/section1/1"
+      >
+        Item 1 of section 1
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/section1/2"
+      >
+        Item 2 of section 1
+      </a>
+    </li>
+  </ul>
+</main>
+`;
+
+exports[`Explorer > section 1 - page 2 1`] = `
+<main
+  data-testid="explorer-page"
+  id="explorer-page"
+>
+  <h1
+    data-testid="section-title"
+  >
+    section1
+  </h1>
+  <h3
+    data-testid="section-count"
+  >
+    Results: 
+    4
+  </h3>
+  <div
+    class="page-navigation"
+  >
+    <a
+      data-discover="true"
+      data-testid="page-prev"
+      href="/section1/?page=1"
+    >
+      prev
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-0"
+        href="/section1/3"
+      >
+        Item 3 of section 1
+      </a>
+    </li>
+    <li>
+      <a
+        data-discover="true"
+        data-testid="item-1"
+        href="/section1/4"
+      >
+        Item 4 of section 1
+      </a>
+    </li>
+  </ul>
+</main>
+`;
