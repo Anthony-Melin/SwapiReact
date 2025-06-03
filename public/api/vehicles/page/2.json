@@ -1,0 +1,43 @@
+{
+  "count": 39,
+  "next": null,
+  "previous": "/api/vehicles?page=1",
+  "results": [
+    {
+      "name": "Tsmeu-6 personal wheel bike",
+      "url": "/api/vehicles/60"
+    },
+    {
+      "name": "Emergency Firespeeder",
+      "url": "/api/vehicles/62"
+    },
+    {
+      "name": "Droid tri-fighter",
+      "url": "/api/vehicles/67"
+    },
+    {
+      "name": "Oevvaor jet catamaran",
+      "url": "/api/vehicles/69"
+    },
+    {
+      "name": "Raddaugh Gnasp fluttercraft",
+      "url": "/api/vehicles/70"
+    },
+    {
+      "name": "Clone turbo tank",
+      "url": "/api/vehicles/71"
+    },
+    {
+      "name": "Corporate Alliance tank droid",
+      "url": "/api/vehicles/72"
+    },
+    {
+      "name": "Droid gunship",
+      "url": "/api/vehicles/73"
+    },
+    {
+      "name": "AT-RT",
+      "url": "/api/vehicles/76"
+    }
+  ]
+}

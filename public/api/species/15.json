@@ -1,0 +1,25 @@
+{
+	"name": "Twi'lek",
+	"classification": "mammals",
+	"designation": "sentient",
+	"average_height": "200",
+	"skin_colors": "orange, yellow, blue, green, pink, purple, tan",
+	"hair_colors": "none",
+	"eye_colors": "blue, brown, orange, pink",
+	"average_lifespan": "unknown",
+	"homeworld": "/api/planets/37",
+	"language": "Twi'leki",
+	"people": [
+		"/api/people/45",
+		"/api/people/46"
+	],
+	"films": [
+		"/api/films/3",
+		"/api/films/4",
+		"/api/films/5",
+		"/api/films/6"
+	],
+	"created": "2014-12-20T09:48:02.406000Z",
+	"edited": "2014-12-20T21:36:42.169000Z",
+	"url": "/api/species/15"
+}

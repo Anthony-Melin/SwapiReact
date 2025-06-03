@@ -1,0 +1,22 @@
+{
+	"name": "Nute Gunray",
+	"height": "191",
+	"mass": "90",
+	"hair_color": "none",
+	"skin_color": "mottled green",
+	"eye_color": "red",
+	"birth_year": "unknown",
+	"gender": "male",
+	"homeworld": "/api/planets/18",
+	"films": [
+		"/api/films/4",
+		"/api/films/5",
+		"/api/films/6"
+	],
+	"species": ["/api/species/11"],
+	"vehicles": [],
+	"starships": [],
+	"created": "2014-12-19T17:05:57.357000Z",
+	"edited": "2014-12-20T21:17:50.377000Z",
+	"url": "/api/people/33"
+}

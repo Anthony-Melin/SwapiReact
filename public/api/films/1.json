@@ -1,0 +1,59 @@
+{
+	"title": "A New Hope",
+	"episode_id": 4,
+	"opening_crawl": "It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save her\r\npeople and restore\r\nfreedom to the galaxy....",
+	"director": "George Lucas",
+	"producer": "Gary Kurtz, Rick McCallum",
+	"release_date": "1977-05-25",
+	"characters": [
+		"/api/people/1",
+		"/api/people/2",
+		"/api/people/3",
+		"/api/people/4",
+		"/api/people/5",
+		"/api/people/6",
+		"/api/people/7",
+		"/api/people/8",
+		"/api/people/9",
+		"/api/people/10",
+		"/api/people/12",
+		"/api/people/13",
+		"/api/people/14",
+		"/api/people/15",
+		"/api/people/16",
+		"/api/people/18",
+		"/api/people/19",
+		"/api/people/81"
+	],
+	"planets": [
+		"/api/planets/1",
+		"/api/planets/2",
+		"/api/planets/3"
+	],
+	"starships": [
+		"/api/starships/2",
+		"/api/starships/3",
+		"/api/starships/5",
+		"/api/starships/9",
+		"/api/starships/10",
+		"/api/starships/11",
+		"/api/starships/12",
+		"/api/starships/13"
+	],
+	"vehicles": [
+		"/api/vehicles/4",
+		"/api/vehicles/6",
+		"/api/vehicles/7",
+		"/api/vehicles/8"
+	],
+	"species": [
+		"/api/species/1",
+		"/api/species/2",
+		"/api/species/3",
+		"/api/species/4",
+		"/api/species/5"
+	],
+	"created": "2014-12-10T14:23:31.880000Z",
+	"edited": "2014-12-20T19:49:45.256000Z",
+	"url": "/api/films/1"
+}

@@ -1,0 +1,35 @@
+{
+  "count": 37,
+  "next": null,
+  "previous": "/api/species?page=1",
+  "results": [
+    {
+      "name": "Besalisk",
+      "url": "/api/species/31"
+    },
+    {
+      "name": "Kaminoan",
+      "url": "/api/species/32"
+    },
+    {
+      "name": "Skakoan",
+      "url": "/api/species/33"
+    },
+    {
+      "name": "Muun",
+      "url": "/api/species/34"
+    },
+    {
+      "name": "Togruta",
+      "url": "/api/species/35"
+    },
+    {
+      "name": "Kaleesh",
+      "url": "/api/species/36"
+    },
+    {
+      "name": "Pau'an",
+      "url": "/api/species/37"
+    }
+  ]
+}

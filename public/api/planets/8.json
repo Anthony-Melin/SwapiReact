@@ -1,0 +1,33 @@
+{
+	"name": "Naboo",
+	"rotation_period": "26",
+	"orbital_period": "312",
+	"diameter": "12120",
+	"climate": "temperate",
+	"gravity": "1 standard",
+	"terrain": "grassy hills, swamps, forests, mountains",
+	"surface_water": "12",
+	"population": "4500000000",
+	"residents": [
+		"/api/people/3",
+		"/api/people/21",
+		"/api/people/35",
+		"/api/people/36",
+		"/api/people/37",
+		"/api/people/38",
+		"/api/people/39",
+		"/api/people/42",
+		"/api/people/60",
+		"/api/people/61",
+		"/api/people/66"
+	],
+	"films": [
+		"/api/films/3",
+		"/api/films/4",
+		"/api/films/5",
+		"/api/films/6"
+	],
+	"created": "2014-12-10T11:52:31.066000Z",
+	"edited": "2014-12-20T20:58:18.430000Z",
+	"url": "/api/planets/8"
+}
