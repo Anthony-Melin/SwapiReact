@@ -1,9 +1,10 @@
 import { urlFormat } from '@api/utils.ts'
 
 async function getFetch<T>(
-    url: string = '/',
+    url: string = import.meta.env.BASE_URL.concat('/root'),
     signal: AbortSignal | null = null
 ) {
+    console.log(url, urlFormat(import.meta.env.VITE_BASE_URL, url))
     const response = await fetch(urlFormat(import.meta.env.VITE_BASE_URL, url), {
         signal: signal,
     })

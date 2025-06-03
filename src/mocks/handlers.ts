@@ -127,7 +127,7 @@ const mocks = {
 }
 
 export const handlers = [
-    http.get('/api.json', () => HttpResponse.json(mocks.root)),
+    http.get('/api/root.json', () => HttpResponse.json(mocks.root)),
     http.get('/api/section1.json', () => HttpResponse.json(mocks.section1.page1)),
     http.get('/api/section1/page/1.json', () => HttpResponse.json(mocks.section1.page1)),
     http.get('/api/section1/page/2.json', () => HttpResponse.json(mocks.section1.page2)),
