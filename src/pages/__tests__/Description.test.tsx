@@ -274,21 +274,21 @@ describe('Description', () => {
         })
 
         it('should render director', async () => {
-            expect(
-                await screen.findByTestId('director')
-            ).toHaveTextContent('Director: George Lucas')
+            expect(await screen.findByTestId('director')).toHaveTextContent(
+                'Director: George Lucas'
+            )
         })
 
         it('should render producer', async () => {
-            expect(
-                await screen.findByTestId('producer')
-            ).toHaveTextContent('Producer: Gary Kurtz, Rick McCallum')
+            expect(await screen.findByTestId('producer')).toHaveTextContent(
+                'Producer: Gary Kurtz, Rick McCallum'
+            )
         })
 
         it.skip('should render release_date', async () => {
-            expect(
-                await screen.findByTestId('release_date')
-            ).toHaveTextContent('Release date: 1977-05-25')
+            expect(await screen.findByTestId('release_date')).toHaveTextContent(
+                'Release date: 1977-05-25'
+            )
         })
 
         it.skip('should render characters', async () => {
@@ -313,51 +313,51 @@ describe('Description', () => {
             expect(
                 await screen.findByTestId('starship-title')
             ).toHaveTextContent('Starships')
-            expect(await screen.findByTestId('starship-empty')).toHaveTextContent(
-                'No starship linked'
-            )
+            expect(
+                await screen.findByTestId('starship-empty')
+            ).toHaveTextContent('No starship linked')
         })
 
         it('should render vehicles', async () => {
             expect(
                 await screen.findByTestId('vehicle-title')
             ).toHaveTextContent('Vehicles')
-            expect(await screen.findByTestId('vehicle-empty')).toHaveTextContent(
-                'No vehicle linked'
-            )
+            expect(
+                await screen.findByTestId('vehicle-empty')
+            ).toHaveTextContent('No vehicle linked')
         })
 
         it('should render species', async () => {
             expect(
                 await screen.findByTestId('species-title')
             ).toHaveTextContent('Species')
-            expect(await screen.findByTestId('species-empty')).toHaveTextContent(
-                'No species linked'
-            )
+            expect(
+                await screen.findByTestId('species-empty')
+            ).toHaveTextContent('No species linked')
         })
 
         it.skip('should render characters', async () => {
             expect(
                 await screen.findByTestId('characters-title')
             ).toHaveTextContent('Characters')
-            expect(await screen.findByTestId('characters-empty')).toHaveTextContent(
-                'No species linked'
-            )
+            expect(
+                await screen.findByTestId('characters-empty')
+            ).toHaveTextContent('No species linked')
         })
 
         it('should render people', async () => {
-            expect(
-                await screen.findByTestId('people-title')
-            ).toHaveTextContent('People')
+            expect(await screen.findByTestId('people-title')).toHaveTextContent(
+                'People'
+            )
             expect(await screen.findByTestId('people-empty')).toHaveTextContent(
                 'No people linked'
             )
         })
 
         it.skip('should render pilots', async () => {
-            expect(
-                await screen.findByTestId('pilot-title')
-            ).toHaveTextContent('Pilots')
+            expect(await screen.findByTestId('pilot-title')).toHaveTextContent(
+                'Pilots'
+            )
             expect(await screen.findByTestId('pilot-empty')).toHaveTextContent(
                 '/api/species/14/'
             )

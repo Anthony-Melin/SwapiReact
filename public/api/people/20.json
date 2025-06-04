@@ -1,24 +1,24 @@
 {
-	"name": "Yoda",
-	"height": "66",
-	"mass": "17",
-	"hair_color": "white",
-	"skin_color": "green",
-	"eye_color": "brown",
-	"birth_year": "896BBY",
-	"gender": "male",
-	"homeworld": "/api/planets/28",
-	"films": [
-		"/api/films/2",
-		"/api/films/3",
-		"/api/films/4",
-		"/api/films/5",
-		"/api/films/6"
-	],
-	"species": ["/api/species/6"],
-	"vehicles": [],
-	"starships": [],
-	"created": "2014-12-15T12:26:01.042000Z",
-	"edited": "2014-12-20T21:17:50.345000Z",
-	"url": "/api/people/20"
+    "name": "Yoda",
+    "height": "66",
+    "mass": "17",
+    "hair_color": "white",
+    "skin_color": "green",
+    "eye_color": "brown",
+    "birth_year": "896BBY",
+    "gender": "male",
+    "homeworld": "/api/planets/28",
+    "films": [
+        "/api/films/2",
+        "/api/films/3",
+        "/api/films/4",
+        "/api/films/5",
+        "/api/films/6"
+    ],
+    "species": ["/api/species/6"],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-15T12:26:01.042000Z",
+    "edited": "2014-12-20T21:17:50.345000Z",
+    "url": "/api/people/20"
 }

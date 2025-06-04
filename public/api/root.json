@@ -1,8 +1,8 @@
 {
-	"films": "/api/films",
-	"people": "/api/people",
-	"planets": "/api/planets",
-	"species": "/api/species",
-	"vehicles": "/api/vehicles",
-	"starships": "/api/starships"
+    "films": "/api/films",
+    "people": "/api/people",
+    "planets": "/api/planets",
+    "species": "/api/species",
+    "vehicles": "/api/vehicles",
+    "starships": "/api/starships"
 }

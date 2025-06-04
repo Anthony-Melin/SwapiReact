@@ -1,95 +1,95 @@
 {
-  "count": 82,
-  "next": null,
-  "previous": "/api/people?page=2",
-  "results": [
-    {
-      "name": "Cliegg Lars",
-      "url": "/api/people/62"
-    },
-    {
-      "name": "Poggle the Lesser",
-      "url": "/api/people/63"
-    },
-    {
-      "name": "Luminara Unduli",
-      "url": "/api/people/64"
-    },
-    {
-      "name": "Barriss Offee",
-      "url": "/api/people/65"
-    },
-    {
-      "name": "Dormé",
-      "url": "/api/people/66"
-    },
-    {
-      "name": "Dooku",
-      "url": "/api/people/67"
-    },
-    {
-      "name": "Bail Prestor Organa",
-      "url": "/api/people/68"
-    },
-    {
-      "name": "Jango Fett",
-      "url": "/api/people/69"
-    },
-    {
-      "name": "Zam Wesell",
-      "url": "/api/people/70"
-    },
-    {
-      "name": "Dexter Jettster",
-      "url": "/api/people/71"
-    },
-    {
-      "name": "Lama Su",
-      "url": "/api/people/72"
-    },
-    {
-      "name": "Taun We",
-      "url": "/api/people/73"
-    },
-    {
-      "name": "Jocasta Nu",
-      "url": "/api/people/74"
-    },
-    {
-      "name": "R4-P17",
-      "url": "/api/people/75"
-    },
-    {
-      "name": "Wat Tambor",
-      "url": "/api/people/76"
-    },
-    {
-      "name": "San Hill",
-      "url": "/api/people/77"
-    },
-    {
-      "name": "Shaak Ti",
-      "url": "/api/people/78"
-    },
-    {
-      "name": "Grievous",
-      "url": "/api/people/79"
-    },
-    {
-      "name": "Tarfful",
-      "url": "/api/people/80"
-    },
-    {
-      "name": "Raymus Antilles",
-      "url": "/api/people/81"
-    },
-    {
-      "name": "Sly Moore",
-      "url": "/api/people/82"
-    },
-    {
-      "name": "Tion Medon",
-      "url": "/api/people/83"
-    }
-  ]
+    "count": 82,
+    "next": null,
+    "previous": "/api/people?page=2",
+    "results": [
+        {
+            "name": "Cliegg Lars",
+            "url": "/api/people/62"
+        },
+        {
+            "name": "Poggle the Lesser",
+            "url": "/api/people/63"
+        },
+        {
+            "name": "Luminara Unduli",
+            "url": "/api/people/64"
+        },
+        {
+            "name": "Barriss Offee",
+            "url": "/api/people/65"
+        },
+        {
+            "name": "Dormé",
+            "url": "/api/people/66"
+        },
+        {
+            "name": "Dooku",
+            "url": "/api/people/67"
+        },
+        {
+            "name": "Bail Prestor Organa",
+            "url": "/api/people/68"
+        },
+        {
+            "name": "Jango Fett",
+            "url": "/api/people/69"
+        },
+        {
+            "name": "Zam Wesell",
+            "url": "/api/people/70"
+        },
+        {
+            "name": "Dexter Jettster",
+            "url": "/api/people/71"
+        },
+        {
+            "name": "Lama Su",
+            "url": "/api/people/72"
+        },
+        {
+            "name": "Taun We",
+            "url": "/api/people/73"
+        },
+        {
+            "name": "Jocasta Nu",
+            "url": "/api/people/74"
+        },
+        {
+            "name": "R4-P17",
+            "url": "/api/people/75"
+        },
+        {
+            "name": "Wat Tambor",
+            "url": "/api/people/76"
+        },
+        {
+            "name": "San Hill",
+            "url": "/api/people/77"
+        },
+        {
+            "name": "Shaak Ti",
+            "url": "/api/people/78"
+        },
+        {
+            "name": "Grievous",
+            "url": "/api/people/79"
+        },
+        {
+            "name": "Tarfful",
+            "url": "/api/people/80"
+        },
+        {
+            "name": "Raymus Antilles",
+            "url": "/api/people/81"
+        },
+        {
+            "name": "Sly Moore",
+            "url": "/api/people/82"
+        },
+        {
+            "name": "Tion Medon",
+            "url": "/api/people/83"
+        }
+    ]
 }

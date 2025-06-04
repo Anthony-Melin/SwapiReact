@@ -153,7 +153,7 @@ const Description = () => {
                                 key={key}
                                 label="Surface has water"
                                 value={value}
-                                remap={{'1': 'yes', '0': 'no'}}
+                                remap={{ '1': 'yes', '0': 'no' }}
                                 testid="surface_water"
                             />
                         )

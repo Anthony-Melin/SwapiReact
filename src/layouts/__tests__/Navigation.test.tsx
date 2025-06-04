@@ -1,6 +1,6 @@
-import {describe, expect, it} from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { createRoutesStub } from 'react-router'
-import {render, screen} from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Navigation from '../Navigation.tsx'
 import { SectionContext } from '@hooks/useSections.tsx'
 
@@ -45,10 +45,12 @@ describe('Description', () => {
 
     it('should render navigation buttons', async () => {
         render(
-            <SectionContext value={{
-                "section 1": "/api/section1",
-                "section 2": "/api/section2",
-            }}>
+            <SectionContext
+                value={{
+                    'section 1': '/api/section1',
+                    'section 2': '/api/section2',
+                }}
+            >
                 <Stub />
             </SectionContext>
         )

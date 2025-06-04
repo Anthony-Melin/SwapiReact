@@ -1,11 +1,12 @@
 describe('description', () => {
-
     describe('first people', () => {
         beforeEach(() => {
             cy.visit('/people/1')
         })
         it('should render title', () => {
-            cy.get('[data-testid="description-title"]').contains('Luke Skywalker')
+            cy.get('[data-testid="description-title"]').contains(
+                'Luke Skywalker'
+            )
         })
         it('should render height', () => {
             cy.get('[data-testid="height"]').contains('Height: 172')
@@ -29,7 +30,9 @@ describe('description', () => {
             cy.get('[data-testid="gender"]').contains('Gender: male')
         })
         it('should render homeworld', () => {
-            cy.get('[data-testid="homeworld"]').contains('Home world: /api/planets/1')
+            cy.get('[data-testid="homeworld"]').contains(
+                'Home world: /api/planets/1'
+            )
         })
         it('should render films', () => {
             cy.get('[data-testid="film-title"]').contains('Films')
@@ -40,7 +43,9 @@ describe('description', () => {
         })
         it('should render species', () => {
             cy.get('[data-testid="species-title"]').contains('Species')
-            cy.get('[data-testid="species-empty"]').contains('No species linked')
+            cy.get('[data-testid="species-empty"]').contains(
+                'No species linked'
+            )
         })
         it('should render vehicles', () => {
             cy.get('[data-testid="vehicle-title"]').contains('Vehicles')
@@ -53,10 +58,14 @@ describe('description', () => {
             cy.get('[data-testid="starship-1"]').contains('/api/starships/22')
         })
         it('should render created', () => {
-            cy.get('[data-testid="created"]').contains('Created: 09/12/2014 14:50:51')
+            cy.get('[data-testid="created"]').contains(
+                'Created: 09/12/2014 14:50:51'
+            )
         })
         it('should render edited', () => {
-            cy.get('[data-testid="edited"]').contains('Edited: 20/12/2014 22:17:56')
+            cy.get('[data-testid="edited"]').contains(
+                'Edited: 20/12/2014 22:17:56'
+            )
         })
     })
 
@@ -68,13 +77,19 @@ describe('description', () => {
             cy.get('[data-testid="description-title"]').contains('A New Hope')
         })
         it('should render director', () => {
-            cy.get('[data-testid="director"]').contains('Director: George Lucas')
+            cy.get('[data-testid="director"]').contains(
+                'Director: George Lucas'
+            )
         })
         it('should render producer', () => {
-            cy.get('[data-testid="producer"]').contains('Producer: Gary Kurtz, Rick McCallum')
+            cy.get('[data-testid="producer"]').contains(
+                'Producer: Gary Kurtz, Rick McCallum'
+            )
         })
         it('should render releasedate', () => {
-            cy.get('[data-testid="releasedate"]').contains('Release date: 1977-05-25')
+            cy.get('[data-testid="releasedate"]').contains(
+                'Release date: 1977-05-25'
+            )
         })
     })
 
@@ -89,13 +104,17 @@ describe('description', () => {
             cy.get('[data-testid="climate"]').contains('Climate: arid')
         })
         it('should render surface_water', () => {
-            cy.get('[data-testid="surface_water"]').contains('Surface has water: yes')
+            cy.get('[data-testid="surface_water"]').contains(
+                'Surface has water: yes'
+            )
         })
         it('should render diameter', () => {
             cy.get('[data-testid="diameter"]').contains('Diameter: 10465')
         })
         it('should render rotation_period', () => {
-            cy.get('[data-testid="rotation_period"]').contains('Period of rotation: 23')
+            cy.get('[data-testid="rotation_period"]').contains(
+                'Period of rotation: 23'
+            )
         })
         it('should render terrain', () => {
             cy.get('[data-testid="terrain"]').contains('Terrain: desert')
@@ -104,16 +123,22 @@ describe('description', () => {
             cy.get('[data-testid="gravity"]').contains('Gravity: 1 standard')
         })
         it('should render orbital_period', () => {
-            cy.get('[data-testid="orbital_period"]').contains('Orbital period: 304')
+            cy.get('[data-testid="orbital_period"]').contains(
+                'Orbital period: 304'
+            )
         })
         it('should render population', () => {
             cy.get('[data-testid="population"]').contains('Population: 200000')
         })
         it('should render created', () => {
-            cy.get('[data-testid="created"]').contains('Created: 09/12/2014 14:50:49')
+            cy.get('[data-testid="created"]').contains(
+                'Created: 09/12/2014 14:50:49'
+            )
         })
         it('should render edited', () => {
-            cy.get('[data-testid="edited"]').contains('Edited: 20/12/2014 21:58:18')
+            cy.get('[data-testid="edited"]').contains(
+                'Edited: 20/12/2014 21:58:18'
+            )
         })
     })
 
@@ -125,37 +150,59 @@ describe('description', () => {
             cy.get('[data-testid="description-title"]').contains('Human')
         })
         it('should render classification', () => {
-            cy.get('[data-testid="classification"]').contains('Classification: mammal')
+            cy.get('[data-testid="classification"]').contains(
+                'Classification: mammal'
+            )
         })
         it('should render designation', () => {
-            cy.get('[data-testid="designation"]').contains('Designation: sentient')
+            cy.get('[data-testid="designation"]').contains(
+                'Designation: sentient'
+            )
         })
         it('should render eye_colors', () => {
-            cy.get('[data-testid="eye_colors"]').contains('Eye colors: brown, blue, green, hazel, grey, amber')
+            cy.get('[data-testid="eye_colors"]').contains(
+                'Eye colors: brown, blue, green, hazel, grey, amber'
+            )
         })
         it('should render skin_colors', () => {
-            cy.get('[data-testid="skin_colors"]').contains('Skin colors: caucasian, black, asian, hispanic')
+            cy.get('[data-testid="skin_colors"]').contains(
+                'Skin colors: caucasian, black, asian, hispanic'
+            )
         })
         it('should render language', () => {
-            cy.get('[data-testid="language"]').contains('Language: Galactic Basic')
+            cy.get('[data-testid="language"]').contains(
+                'Language: Galactic Basic'
+            )
         })
         it('should render hair_colors', () => {
-            cy.get('[data-testid="hair_colors"]').contains('Hair colors: blonde, brown, black, red')
+            cy.get('[data-testid="hair_colors"]').contains(
+                'Hair colors: blonde, brown, black, red'
+            )
         })
         it('should render homeworld', () => {
-            cy.get('[data-testid="homeworld"]').contains('Home world: /api/planets/9')
+            cy.get('[data-testid="homeworld"]').contains(
+                'Home world: /api/planets/9'
+            )
         })
         it('should render average_lifespan', () => {
-            cy.get('[data-testid="average_lifespan"]').contains('Average lifespan: 120')
+            cy.get('[data-testid="average_lifespan"]').contains(
+                'Average lifespan: 120'
+            )
         })
         it('should render average_height', () => {
-            cy.get('[data-testid="average_height"]').contains('Average height: 180')
+            cy.get('[data-testid="average_height"]').contains(
+                'Average height: 180'
+            )
         })
         it('should render created', () => {
-            cy.get('[data-testid="created"]').contains('Created: 10/12/2014 14:52:11')
+            cy.get('[data-testid="created"]').contains(
+                'Created: 10/12/2014 14:52:11'
+            )
         })
         it('should render edited', () => {
-            cy.get('[data-testid="edited"]').contains('Edited: 20/12/2014 22:36:42')
+            cy.get('[data-testid="edited"]').contains(
+                'Edited: 20/12/2014 22:36:42'
+            )
         })
     })
 
@@ -167,16 +214,22 @@ describe('description', () => {
             cy.get('[data-testid="description-title"]').contains('Sand Crawler')
         })
         it('should render consumables', () => {
-            cy.get('[data-testid="consumables"]').contains('Consumables: 2 months')
+            cy.get('[data-testid="consumables"]').contains(
+                'Consumables: 2 months'
+            )
         })
         it('should render cargo_capacity', () => {
-            cy.get('[data-testid="cargo_capacity"]').contains('Cargo capacity: 50000')
+            cy.get('[data-testid="cargo_capacity"]').contains(
+                'Cargo capacity: 50000'
+            )
         })
         it('should render passengers', () => {
             cy.get('[data-testid="passengers"]').contains('Passengers: 30')
         })
         it('should render max_atmosphering_speed', () => {
-            cy.get('[data-testid="max_atmosphering_speed"]').contains('Max atmosphering speed: 30')
+            cy.get('[data-testid="max_atmosphering_speed"]').contains(
+                'Max atmosphering speed: 30'
+            )
         })
         it('should render crew', () => {
             cy.get('[data-testid="crew"]').contains('Crew: 46')
@@ -188,19 +241,29 @@ describe('description', () => {
             cy.get('[data-testid="model"]').contains('Model: Digger Crawler')
         })
         it('should render cost_in_credits', () => {
-            cy.get('[data-testid="cost_in_credits"]').contains('Cost in credits: 150000')
+            cy.get('[data-testid="cost_in_credits"]').contains(
+                'Cost in credits: 150000'
+            )
         })
         it('should render manufacturer', () => {
-            cy.get('[data-testid="manufacturer"]').contains('Manufacturer: Corellia Mining Corporation')
+            cy.get('[data-testid="manufacturer"]').contains(
+                'Manufacturer: Corellia Mining Corporation'
+            )
         })
         it('should render vehicle_class', () => {
-            cy.get('[data-testid="vehicle_class"]').contains('Vehicle class: wheeled')
+            cy.get('[data-testid="vehicle_class"]').contains(
+                'Vehicle class: wheeled'
+            )
         })
         it('should render created', () => {
-            cy.get('[data-testid="created"]').contains('Created: 10/12/2014 16:36:25')
+            cy.get('[data-testid="created"]').contains(
+                'Created: 10/12/2014 16:36:25'
+            )
         })
         it('should render edited', () => {
-            cy.get('[data-testid="edited"]').contains('Edited: 20/12/2014 22:30:21')
+            cy.get('[data-testid="edited"]').contains(
+                'Edited: 20/12/2014 22:30:21'
+            )
         })
     })
 
@@ -209,19 +272,27 @@ describe('description', () => {
             cy.visit('/starships/2')
         })
         it('should render title', () => {
-            cy.get('[data-testid="description-title"]').contains('CR90 corvette')
+            cy.get('[data-testid="description-title"]').contains(
+                'CR90 corvette'
+            )
         })
         it('should render consumables', () => {
-            cy.get('[data-testid="consumables"]').contains('Consumables: 1 year')
+            cy.get('[data-testid="consumables"]').contains(
+                'Consumables: 1 year'
+            )
         })
         it('should render cargo_capacity', () => {
-            cy.get('[data-testid="cargo_capacity"]').contains('Cargo capacity: 3000000')
+            cy.get('[data-testid="cargo_capacity"]').contains(
+                'Cargo capacity: 3000000'
+            )
         })
         it('should render passengers', () => {
             cy.get('[data-testid="passengers"]').contains('Passengers: 600')
         })
         it('should render max_atmosphering_speed', () => {
-            cy.get('[data-testid="max_atmosphering_speed"]').contains('Max atmosphering speed: 950')
+            cy.get('[data-testid="max_atmosphering_speed"]').contains(
+                'Max atmosphering speed: 950'
+            )
         })
         it('should render crew', () => {
             cy.get('[data-testid="crew"]').contains('Crew: 30-165')
@@ -233,22 +304,34 @@ describe('description', () => {
             cy.get('[data-testid="model"]').contains('Model: CR90 corvette')
         })
         it('should render cost_in_credits', () => {
-            cy.get('[data-testid="cost_in_credits"]').contains('Cost in credits: 3500000')
+            cy.get('[data-testid="cost_in_credits"]').contains(
+                'Cost in credits: 3500000'
+            )
         })
         it('should render manufacturer', () => {
-            cy.get('[data-testid="manufacturer"]').contains('Manufacturer: Corellian Engineering Corporation')
+            cy.get('[data-testid="manufacturer"]').contains(
+                'Manufacturer: Corellian Engineering Corporation'
+            )
         })
         it('should render starship_class', () => {
-            cy.get('[data-testid="starship_class"]').contains('Starship class: corvette')
+            cy.get('[data-testid="starship_class"]').contains(
+                'Starship class: corvette'
+            )
         })
         it('should render hyperdrive_rating', () => {
-            cy.get('[data-testid="hyperdrive_rating"]').contains('Hyperdrive rating: 2.0')
+            cy.get('[data-testid="hyperdrive_rating"]').contains(
+                'Hyperdrive rating: 2.0'
+            )
         })
         it('should render created', () => {
-            cy.get('[data-testid="created"]').contains('Created: 10/12/2014 15:20:33')
+            cy.get('[data-testid="created"]').contains(
+                'Created: 10/12/2014 15:20:33'
+            )
         })
         it('should render edited', () => {
-            cy.get('[data-testid="edited"]').contains('Edited: 20/12/2014 22:23:49')
+            cy.get('[data-testid="edited"]').contains(
+                'Edited: 20/12/2014 22:23:49'
+            )
         })
     })
 })

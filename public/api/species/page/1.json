@@ -1,127 +1,127 @@
 {
-  "count": 37,
-  "next": "/api/species?page=2",
-  "previous": null,
-  "results": [
-    {
-      "name": "Human",
-      "url": "/api/species/1"
-    },
-    {
-      "name": "Droid",
-      "url": "/api/species/2"
-    },
-    {
-      "name": "Wookie",
-      "url": "/api/species/3"
-    },
-    {
-      "name": "Rodian",
-      "url": "/api/species/4"
-    },
-    {
-      "name": "Hutt",
-      "url": "/api/species/5"
-    },
-    {
-      "name": "Yoda's species",
-      "url": "/api/species/6"
-    },
-    {
-      "name": "Trandoshan",
-      "url": "/api/species/7"
-    },
-    {
-      "name": "Mon Calamari",
-      "url": "/api/species/8"
-    },
-    {
-      "name": "Ewok",
-      "url": "/api/species/9"
-    },
-    {
-      "name": "Sullustan",
-      "url": "/api/species/10"
-    },
-    {
-      "name": "Neimodian",
-      "url": "/api/species/11"
-    },
-    {
-      "name": "Gungan",
-      "url": "/api/species/12"
-    },
-    {
-      "name": "Toydarian",
-      "url": "/api/species/13"
-    },
-    {
-      "name": "Dug",
-      "url": "/api/species/14"
-    },
-    {
-      "name": "Twi'lek",
-      "url": "/api/species/15"
-    },
-    {
-      "name": "Aleena",
-      "url": "/api/species/16"
-    },
-    {
-      "name": "Vulptereen",
-      "url": "/api/species/17"
-    },
-    {
-      "name": "Xexto",
-      "url": "/api/species/18"
-    },
-    {
-      "name": "Toong",
-      "url": "/api/species/19"
-    },
-    {
-      "name": "Cerean",
-      "url": "/api/species/20"
-    },
-    {
-      "name": "Nautolan",
-      "url": "/api/species/21"
-    },
-    {
-      "name": "Zabrak",
-      "url": "/api/species/22"
-    },
-    {
-      "name": "Tholothian",
-      "url": "/api/species/23"
-    },
-    {
-      "name": "Iktotchi",
-      "url": "/api/species/24"
-    },
-    {
-      "name": "Quermian",
-      "url": "/api/species/25"
-    },
-    {
-      "name": "Kel Dor",
-      "url": "/api/species/26"
-    },
-    {
-      "name": "Chagrian",
-      "url": "/api/species/27"
-    },
-    {
-      "name": "Geonosian",
-      "url": "/api/species/28"
-    },
-    {
-      "name": "Mirialan",
-      "url": "/api/species/29"
-    },
-    {
-      "name": "Clawdite",
-      "url": "/api/species/30"
-    }
-  ]
+    "count": 37,
+    "next": "/api/species?page=2",
+    "previous": null,
+    "results": [
+        {
+            "name": "Human",
+            "url": "/api/species/1"
+        },
+        {
+            "name": "Droid",
+            "url": "/api/species/2"
+        },
+        {
+            "name": "Wookie",
+            "url": "/api/species/3"
+        },
+        {
+            "name": "Rodian",
+            "url": "/api/species/4"
+        },
+        {
+            "name": "Hutt",
+            "url": "/api/species/5"
+        },
+        {
+            "name": "Yoda's species",
+            "url": "/api/species/6"
+        },
+        {
+            "name": "Trandoshan",
+            "url": "/api/species/7"
+        },
+        {
+            "name": "Mon Calamari",
+            "url": "/api/species/8"
+        },
+        {
+            "name": "Ewok",
+            "url": "/api/species/9"
+        },
+        {
+            "name": "Sullustan",
+            "url": "/api/species/10"
+        },
+        {
+            "name": "Neimodian",
+            "url": "/api/species/11"
+        },
+        {
+            "name": "Gungan",
+            "url": "/api/species/12"
+        },
+        {
+            "name": "Toydarian",
+            "url": "/api/species/13"
+        },
+        {
+            "name": "Dug",
+            "url": "/api/species/14"
+        },
+        {
+            "name": "Twi'lek",
+            "url": "/api/species/15"
+        },
+        {
+            "name": "Aleena",
+            "url": "/api/species/16"
+        },
+        {
+            "name": "Vulptereen",
+            "url": "/api/species/17"
+        },
+        {
+            "name": "Xexto",
+            "url": "/api/species/18"
+        },
+        {
+            "name": "Toong",
+            "url": "/api/species/19"
+        },
+        {
+            "name": "Cerean",
+            "url": "/api/species/20"
+        },
+        {
+            "name": "Nautolan",
+            "url": "/api/species/21"
+        },
+        {
+            "name": "Zabrak",
+            "url": "/api/species/22"
+        },
+        {
+            "name": "Tholothian",
+            "url": "/api/species/23"
+        },
+        {
+            "name": "Iktotchi",
+            "url": "/api/species/24"
+        },
+        {
+            "name": "Quermian",
+            "url": "/api/species/25"
+        },
+        {
+            "name": "Kel Dor",
+            "url": "/api/species/26"
+        },
+        {
+            "name": "Chagrian",
+            "url": "/api/species/27"
+        },
+        {
+            "name": "Geonosian",
+            "url": "/api/species/28"
+        },
+        {
+            "name": "Mirialan",
+            "url": "/api/species/29"
+        },
+        {
+            "name": "Clawdite",
+            "url": "/api/species/30"
+        }
+    ]
 }
