@@ -1,29 +1,18 @@
 {
-	"name": "Luke Skywalker",
-	"height": "172",
-	"mass": "77",
-	"hair_color": "blond",
-	"skin_color": "fair",
-	"eye_color": "blue",
-	"birth_year": "19BBY",
-	"gender": "male",
-	"homeworld": "/api/planets/1",
-	"films": [
-		"/api/films/1",
-		"/api/films/2",
-		"/api/films/3",
-		"/api/films/6"
-	],
-	"species": [],
-	"vehicles": [
-		"/api/vehicles/14",
-		"/api/vehicles/30"
-	],
-	"starships": [
-		"/api/starships/12",
-		"/api/starships/22"
-	],
-	"created": "2014-12-09T13:50:51.644000Z",
-	"edited": "2014-12-20T21:17:56.891000Z",
-	"url": "/api/people/1"
+    "name": "Luke Skywalker",
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "homeworld": "/api/planets/1",
+    "films": ["/api/films/1", "/api/films/2", "/api/films/3", "/api/films/6"],
+    "species": [],
+    "vehicles": ["/api/vehicles/14", "/api/vehicles/30"],
+    "starships": ["/api/starships/12", "/api/starships/22"],
+    "created": "2014-12-09T13:50:51.644000Z",
+    "edited": "2014-12-20T21:17:56.891000Z",
+    "url": "/api/people/1"
 }

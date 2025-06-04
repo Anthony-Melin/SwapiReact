@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react'
 import LabelValue from '../LabelValue.tsx'
 
 describe('LabelValue', () => {
-
     it('should match snapshot', () => {
         render(<LabelValue label="LABEL" value="VALUE" testid="testid" />)
         expect(screen.getByTestId('testid')).toMatchSnapshot()
@@ -15,7 +14,16 @@ describe('LabelValue', () => {
     })
 
     it('should render remaped value', () => {
-        render(<LabelValue label="LABEL" value="VALUE" remap={{'VALUE': 'REMAP_VALUE'}} testid="testid" />)
-        expect(screen.getByTestId('testid')).toHaveTextContent('LABEL: REMAP_VALUE')
+        render(
+            <LabelValue
+                label="LABEL"
+                value="VALUE"
+                remap={{ VALUE: 'REMAP_VALUE' }}
+                testid="testid"
+            />
+        )
+        expect(screen.getByTestId('testid')).toHaveTextContent(
+            'LABEL: REMAP_VALUE'
+        )
     })
 })

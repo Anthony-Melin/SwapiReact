@@ -71,12 +71,14 @@ describe('Explorer', () => {
     })
 
     describe('section - unknown page', async () => {
-        it.for(['/section1?page=3', '/section1?page=-3', '/section1?page=foo', '/section2?page=foo'])(
-            `url %s`,
-            async (url) => {
-                renderExplorer(url)
-                expect(await screen.findByTestId('error')).toBeVisible()
-            }
-        )
+        it.for([
+            '/section1?page=3',
+            '/section1?page=-3',
+            '/section1?page=foo',
+            '/section2?page=foo',
+        ])(`url %s`, async (url) => {
+            renderExplorer(url)
+            expect(await screen.findByTestId('error')).toBeVisible()
+        })
     })
 })

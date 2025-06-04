@@ -1,22 +1,18 @@
 {
-	"name": "Wedge Antilles",
-	"height": "170",
-	"mass": "77",
-	"hair_color": "brown",
-	"skin_color": "fair",
-	"eye_color": "hazel",
-	"birth_year": "21BBY",
-	"gender": "male",
-	"homeworld": "/api/planets/22",
-	"films": [
-		"/api/films/1",
-		"/api/films/2",
-		"/api/films/3"
-	],
-	"species": [],
-	"vehicles": ["/api/vehicles/14"],
-	"starships": ["/api/starships/12"],
-	"created": "2014-12-12T11:08:06.469000Z",
-	"edited": "2014-12-20T21:17:50.341000Z",
-	"url": "/api/people/18"
+    "name": "Wedge Antilles",
+    "height": "170",
+    "mass": "77",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "hazel",
+    "birth_year": "21BBY",
+    "gender": "male",
+    "homeworld": "/api/planets/22",
+    "films": ["/api/films/1", "/api/films/2", "/api/films/3"],
+    "species": [],
+    "vehicles": ["/api/vehicles/14"],
+    "starships": ["/api/starships/12"],
+    "created": "2014-12-12T11:08:06.469000Z",
+    "edited": "2014-12-20T21:17:50.341000Z",
+    "url": "/api/people/18"
 }

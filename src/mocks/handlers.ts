@@ -46,34 +46,19 @@ const mocks = {
             birth_year: '19BBY',
             gender: 'male',
             homeworld: '/api/homeworld/1/',
-            films: [
-                '/api/films/1/',
-                '/api/films/2/',
-            ],
-            species: [
-                '/api/species/14/',
-                '/api/species/30/',
-            ],
-            vehicles: [
-                '/api/vehicles/14/',
-                '/api/vehicles/30/',
-            ],
-            starships: [
-                '/api/starships/12/',
-                '/api/starships/22/',
-            ],
+            films: ['/api/films/1/', '/api/films/2/'],
+            species: ['/api/species/14/', '/api/species/30/'],
+            vehicles: ['/api/vehicles/14/', '/api/vehicles/30/'],
+            starships: ['/api/starships/12/', '/api/starships/22/'],
             created: '2014-12-09T13:50:51.644000Z',
             edited: '2014-12-20T21:17:56.891000Z',
             url: '/api/section1/1',
             episode_id: 4,
-            opening_crawl: "It is a period of civil war.",
+            opening_crawl: 'It is a period of civil war.',
             director: 'George Lucas',
             producer: 'Gary Kurtz, Rick McCallum',
             release_date: '1977-05-25',
-            characters: [
-                '/api/characters/1/',
-                '/api/characters/2/',
-            ],
+            characters: ['/api/characters/1/', '/api/characters/2/'],
             climate: 'arid',
             surface_water: '1',
             diameter: '10465',
@@ -85,10 +70,7 @@ const mocks = {
             classification: 'mammal',
             designation: 'sentient',
             eye_colors: 'brown, blue, green, hazel, grey, amber',
-            people: [
-                '/api/people/66',
-                '/api/people/67',
-            ],
+            people: ['/api/people/66', '/api/people/67'],
             skin_colors: 'caucasian, black, asian, hispanic',
             language: 'Galactic Basic',
             hair_colors: 'blonde, brown, black, red',
@@ -107,10 +89,7 @@ const mocks = {
             starship_class: 'corvette',
             hyperdrive_rating: '2.0',
             vehicle_class: 'wheeled',
-            pilots: [
-                "/api/pilots/1",
-                "/api/pilots/2"
-            ],
+            pilots: ['/api/pilots/1', '/api/pilots/2'],
         },
         item2: {
             title: 'R2D2',
@@ -121,17 +100,27 @@ const mocks = {
             characters: [],
             people: [],
             pilots: [],
-            surface_water: '0'
+            surface_water: '0',
         },
     },
 }
 
 export const handlers = [
     http.get('/api/root.json', () => HttpResponse.json(mocks.root)),
-    http.get('/api/section1.json', () => HttpResponse.json(mocks.section1.page1)),
-    http.get('/api/section1/page/1.json', () => HttpResponse.json(mocks.section1.page1)),
-    http.get('/api/section1/page/2.json', () => HttpResponse.json(mocks.section1.page2)),
-    http.get('/api/section1/1.json', () => HttpResponse.json(mocks.section1.item1)),
-    http.get('/api/section1/2.json', () => HttpResponse.json(mocks.section1.item2)),
+    http.get('/api/section1.json', () =>
+        HttpResponse.json(mocks.section1.page1)
+    ),
+    http.get('/api/section1/page/1.json', () =>
+        HttpResponse.json(mocks.section1.page1)
+    ),
+    http.get('/api/section1/page/2.json', () =>
+        HttpResponse.json(mocks.section1.page2)
+    ),
+    http.get('/api/section1/1.json', () =>
+        HttpResponse.json(mocks.section1.item1)
+    ),
+    http.get('/api/section1/2.json', () =>
+        HttpResponse.json(mocks.section1.item2)
+    ),
     http.all('/api/*', () => new HttpResponse(null, { status: 404 })),
 ]

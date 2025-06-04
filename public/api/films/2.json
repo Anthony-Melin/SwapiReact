@@ -1,61 +1,61 @@
 {
-	"title": "The Empire Strikes Back",
-	"episode_id": 5,
-	"opening_crawl": "It is a dark time for the\r\nRebellion. Although the Death\r\nStar has been destroyed,\r\nImperial troops have driven the\r\nRebel forces from their hidden\r\nbase and pursued them across\r\nthe galaxy.\r\n\r\nEvading the dreaded Imperial\r\nStarfleet, a group of freedom\r\nfighters led by Luke Skywalker\r\nhas established a new secret\r\nbase on the remote ice world\r\nof Hoth.\r\n\r\nThe evil lord Darth Vader,\r\nobsessed with finding young\r\nSkywalker, has dispatched\r\nthousands of remote probes into\r\nthe far reaches of space....",
-	"director": "Irvin Kershner",
-	"producer": "Gary Kurtz, Rick McCallum",
-	"release_date": "1980-05-17",
-	"characters": [
-		"/api/people/1",
-		"/api/people/2",
-		"/api/people/3",
-		"/api/people/4",
-		"/api/people/5",
-		"/api/people/10",
-		"/api/people/13",
-		"/api/people/14",
-		"/api/people/18",
-		"/api/people/20",
-		"/api/people/21",
-		"/api/people/22",
-		"/api/people/23",
-		"/api/people/24",
-		"/api/people/25",
-		"/api/people/26"
-	],
-	"planets": [
-		"/api/planets/4",
-		"/api/planets/5",
-		"/api/planets/6",
-		"/api/planets/27"
-	],
-	"starships": [
-		"/api/starships/3",
-		"/api/starships/10",
-		"/api/starships/11",
-		"/api/starships/12",
-		"/api/starships/15",
-		"/api/starships/17",
-		"/api/starships/21",
-		"/api/starships/22",
-		"/api/starships/23"
-	],
-	"vehicles": [
-		"/api/vehicles/8",
-		"/api/vehicles/14",
-		"/api/vehicles/16",
-		"/api/vehicles/18",
-		"/api/vehicles/19",
-		"/api/vehicles/20"
-	],
-	"species": [
-		"/api/species/1",
-		"/api/species/2",
-		"/api/species/3",
-		"/api/species/6",
-		"/api/species/7"
-	],
-	"created": "2014-12-12T11:26:24.656000Z",
-	"edited": "2014-12-15T13:07:53.386000Z",
-	"url": "/api/films/2"
+    "title": "The Empire Strikes Back",
+    "episode_id": 5,
+    "opening_crawl": "It is a dark time for the\r\nRebellion. Although the Death\r\nStar has been destroyed,\r\nImperial troops have driven the\r\nRebel forces from their hidden\r\nbase and pursued them across\r\nthe galaxy.\r\n\r\nEvading the dreaded Imperial\r\nStarfleet, a group of freedom\r\nfighters led by Luke Skywalker\r\nhas established a new secret\r\nbase on the remote ice world\r\nof Hoth.\r\n\r\nThe evil lord Darth Vader,\r\nobsessed with finding young\r\nSkywalker, has dispatched\r\nthousands of remote probes into\r\nthe far reaches of space....",
+    "director": "Irvin Kershner",
+    "producer": "Gary Kurtz, Rick McCallum",
+    "release_date": "1980-05-17",
+    "characters": [
+        "/api/people/1",
+        "/api/people/2",
+        "/api/people/3",
+        "/api/people/4",
+        "/api/people/5",
+        "/api/people/10",
+        "/api/people/13",
+        "/api/people/14",
+        "/api/people/18",
+        "/api/people/20",
+        "/api/people/21",
+        "/api/people/22",
+        "/api/people/23",
+        "/api/people/24",
+        "/api/people/25",
+        "/api/people/26"
+    ],
+    "planets": [
+        "/api/planets/4",
+        "/api/planets/5",
+        "/api/planets/6",
+        "/api/planets/27"
+    ],
+    "starships": [
+        "/api/starships/3",
+        "/api/starships/10",
+        "/api/starships/11",
+        "/api/starships/12",
+        "/api/starships/15",
+        "/api/starships/17",
+        "/api/starships/21",
+        "/api/starships/22",
+        "/api/starships/23"
+    ],
+    "vehicles": [
+        "/api/vehicles/8",
+        "/api/vehicles/14",
+        "/api/vehicles/16",
+        "/api/vehicles/18",
+        "/api/vehicles/19",
+        "/api/vehicles/20"
+    ],
+    "species": [
+        "/api/species/1",
+        "/api/species/2",
+        "/api/species/3",
+        "/api/species/6",
+        "/api/species/7"
+    ],
+    "created": "2014-12-12T11:26:24.656000Z",
+    "edited": "2014-12-15T13:07:53.386000Z",
+    "url": "/api/films/2"
 }

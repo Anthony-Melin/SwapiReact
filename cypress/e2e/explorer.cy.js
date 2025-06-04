@@ -1,7 +1,6 @@
 describe('explorer', () => {
-
     describe('is available', () => {
-        [
+        ;[
             { url: '/films', title: 'film' },
             { url: '/people', title: 'people' },
             { url: '/species', title: 'species' },
@@ -18,7 +17,7 @@ describe('explorer', () => {
     })
 
     describe('page of films', () => {
-        ['/films', '/films?page=1'].forEach((url) => {
+        ;['/films', '/films?page=1'].forEach((url) => {
             describe(`url ${url}`, () => {
                 beforeEach(() => {
                     cy.visit(url)
@@ -27,7 +26,9 @@ describe('explorer', () => {
                     cy.get('[data-testid="section-title"]').contains('films')
                 })
                 it('should render count', () => {
-                    cy.get('[data-testid="section-count"]').contains('Results: 6')
+                    cy.get('[data-testid="section-count"]').contains(
+                        'Results: 6'
+                    )
                 })
                 it('should not render page-prev', () => {
                     cy.get('[data-testid="page-prev"]').should('not.exist')
@@ -37,18 +38,28 @@ describe('explorer', () => {
                 })
                 it('should render items', () => {
                     cy.get('[data-testid="item-0"]').contains('A New Hope')
-                    cy.get('[data-testid="item-1"]').contains('The Empire Strikes Back')
-                    cy.get('[data-testid="item-2"]').contains('Return of the Jedi')
-                    cy.get('[data-testid="item-3"]').contains('The Phantom Menace')
-                    cy.get('[data-testid="item-4"]').contains('Attack of the Clones')
-                    cy.get('[data-testid="item-5"]').contains('Revenge of the Sith')
+                    cy.get('[data-testid="item-1"]').contains(
+                        'The Empire Strikes Back'
+                    )
+                    cy.get('[data-testid="item-2"]').contains(
+                        'Return of the Jedi'
+                    )
+                    cy.get('[data-testid="item-3"]').contains(
+                        'The Phantom Menace'
+                    )
+                    cy.get('[data-testid="item-4"]').contains(
+                        'Attack of the Clones'
+                    )
+                    cy.get('[data-testid="item-5"]').contains(
+                        'Revenge of the Sith'
+                    )
                 })
             })
         })
     })
 
     describe('first page of species', () => {
-        ['/species', '/species?page=1'].forEach((url) => {
+        ;['/species', '/species?page=1'].forEach((url) => {
             describe(`url ${url}`, () => {
                 beforeEach(() => {
                     cy.visit(url)
@@ -57,7 +68,9 @@ describe('explorer', () => {
                     cy.get('[data-testid="section-title"]').contains('species')
                 })
                 it('should render count', () => {
-                    cy.get('[data-testid="section-count"]').contains('Results: 37')
+                    cy.get('[data-testid="section-count"]').contains(
+                        'Results: 37'
+                    )
                 })
                 it('should not render page-prev', () => {
                     cy.get('[data-testid="page-prev"]').should('not.exist')
@@ -70,7 +83,7 @@ describe('explorer', () => {
     })
 
     describe('second page of species', () => {
-        ['/species?page=2'].forEach((url) => {
+        ;['/species?page=2'].forEach((url) => {
             describe(`url ${url}`, () => {
                 beforeEach(() => {
                     cy.visit(url)
@@ -79,7 +92,9 @@ describe('explorer', () => {
                     cy.get('[data-testid="section-title"]').contains('species')
                 })
                 it('should render count', () => {
-                    cy.get('[data-testid="section-count"]').contains('Results: 37')
+                    cy.get('[data-testid="section-count"]').contains(
+                        'Results: 37'
+                    )
                 })
                 it('should render page-prev', () => {
                     cy.get('[data-testid="page-prev"]').should('be.visible')

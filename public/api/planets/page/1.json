@@ -1,127 +1,127 @@
 {
-  "count": 60,
-  "next": "/api/planets?page=2",
-  "previous": null,
-  "results": [
-    {
-      "name": "Tatooine",
-      "url": "/api/planets/1"
-    },
-    {
-      "name": "Alderaan",
-      "url": "/api/planets/2"
-    },
-    {
-      "name": "Yavin IV",
-      "url": "/api/planets/3"
-    },
-    {
-      "name": "Hoth",
-      "url": "/api/planets/4"
-    },
-    {
-      "name": "Dagobah",
-      "url": "/api/planets/5"
-    },
-    {
-      "name": "Bespin",
-      "url": "/api/planets/6"
-    },
-    {
-      "name": "Endor",
-      "url": "/api/planets/7"
-    },
-    {
-      "name": "Naboo",
-      "url": "/api/planets/8"
-    },
-    {
-      "name": "Coruscant",
-      "url": "/api/planets/9"
-    },
-    {
-      "name": "Kamino",
-      "url": "/api/planets/10"
-    },
-    {
-      "name": "Geonosis",
-      "url": "/api/planets/11"
-    },
-    {
-      "name": "Utapau",
-      "url": "/api/planets/12"
-    },
-    {
-      "name": "Mustafar",
-      "url": "/api/planets/13"
-    },
-    {
-      "name": "Kashyyyk",
-      "url": "/api/planets/14"
-    },
-    {
-      "name": "Polis Massa",
-      "url": "/api/planets/15"
-    },
-    {
-      "name": "Mygeeto",
-      "url": "/api/planets/16"
-    },
-    {
-      "name": "Felucia",
-      "url": "/api/planets/17"
-    },
-    {
-      "name": "Cato Neimoidia",
-      "url": "/api/planets/18"
-    },
-    {
-      "name": "Saleucami",
-      "url": "/api/planets/19"
-    },
-    {
-      "name": "Stewjon",
-      "url": "/api/planets/20"
-    },
-    {
-      "name": "Eriadu",
-      "url": "/api/planets/21"
-    },
-    {
-      "name": "Corellia",
-      "url": "/api/planets/22"
-    },
-    {
-      "name": "Rodia",
-      "url": "/api/planets/23"
-    },
-    {
-      "name": "Nal Hutta",
-      "url": "/api/planets/24"
-    },
-    {
-      "name": "Dantooine",
-      "url": "/api/planets/25"
-    },
-    {
-      "name": "Bestine IV",
-      "url": "/api/planets/26"
-    },
-    {
-      "name": "Ord Mantell",
-      "url": "/api/planets/27"
-    },
-    {
-      "name": "unknown",
-      "url": "/api/planets/28"
-    },
-    {
-      "name": "Trandosha",
-      "url": "/api/planets/29"
-    },
-    {
-      "name": "Socorro",
-      "url": "/api/planets/30"
-    }
-  ]
+    "count": 60,
+    "next": "/api/planets?page=2",
+    "previous": null,
+    "results": [
+        {
+            "name": "Tatooine",
+            "url": "/api/planets/1"
+        },
+        {
+            "name": "Alderaan",
+            "url": "/api/planets/2"
+        },
+        {
+            "name": "Yavin IV",
+            "url": "/api/planets/3"
+        },
+        {
+            "name": "Hoth",
+            "url": "/api/planets/4"
+        },
+        {
+            "name": "Dagobah",
+            "url": "/api/planets/5"
+        },
+        {
+            "name": "Bespin",
+            "url": "/api/planets/6"
+        },
+        {
+            "name": "Endor",
+            "url": "/api/planets/7"
+        },
+        {
+            "name": "Naboo",
+            "url": "/api/planets/8"
+        },
+        {
+            "name": "Coruscant",
+            "url": "/api/planets/9"
+        },
+        {
+            "name": "Kamino",
+            "url": "/api/planets/10"
+        },
+        {
+            "name": "Geonosis",
+            "url": "/api/planets/11"
+        },
+        {
+            "name": "Utapau",
+            "url": "/api/planets/12"
+        },
+        {
+            "name": "Mustafar",
+            "url": "/api/planets/13"
+        },
+        {
+            "name": "Kashyyyk",
+            "url": "/api/planets/14"
+        },
+        {
+            "name": "Polis Massa",
+            "url": "/api/planets/15"
+        },
+        {
+            "name": "Mygeeto",
+            "url": "/api/planets/16"
+        },
+        {
+            "name": "Felucia",
+            "url": "/api/planets/17"
+        },
+        {
+            "name": "Cato Neimoidia",
+            "url": "/api/planets/18"
+        },
+        {
+            "name": "Saleucami",
+            "url": "/api/planets/19"
+        },
+        {
+            "name": "Stewjon",
+            "url": "/api/planets/20"
+        },
+        {
+            "name": "Eriadu",
+            "url": "/api/planets/21"
+        },
+        {
+            "name": "Corellia",
+            "url": "/api/planets/22"
+        },
+        {
+            "name": "Rodia",
+            "url": "/api/planets/23"
+        },
+        {
+            "name": "Nal Hutta",
+            "url": "/api/planets/24"
+        },
+        {
+            "name": "Dantooine",
+            "url": "/api/planets/25"
+        },
+        {
+            "name": "Bestine IV",
+            "url": "/api/planets/26"
+        },
+        {
+            "name": "Ord Mantell",
+            "url": "/api/planets/27"
+        },
+        {
+            "name": "unknown",
+            "url": "/api/planets/28"
+        },
+        {
+            "name": "Trandosha",
+            "url": "/api/planets/29"
+        },
+        {
+            "name": "Socorro",
+            "url": "/api/planets/30"
+        }
+    ]
 }
