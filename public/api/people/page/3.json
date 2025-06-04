@@ -1,8 +1,20 @@
 {
-  "count": 79,
+  "count": 82,
   "next": null,
   "previous": "/api/people?page=2",
   "results": [
+    {
+      "name": "Cliegg Lars",
+      "url": "/api/people/62"
+    },
+    {
+      "name": "Poggle the Lesser",
+      "url": "/api/people/63"
+    },
+    {
+      "name": "Luminara Unduli",
+      "url": "/api/people/64"
+    },
     {
       "name": "Barriss Offee",
       "url": "/api/people/65"

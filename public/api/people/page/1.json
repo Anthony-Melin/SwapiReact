@@ -1,18 +1,30 @@
 {
-  "count": 79,
+  "count": 82,
   "next": "/api/people?page=2",
   "previous": null,
   "results": [
     {
       "name": "Luke Skywalker",
+      "url": "/api/people/1"
+    },
+    {
+      "name": "C-3PO",
       "url": "/api/people/2"
     },
     {
       "name": "R2-D2",
+      "url": "/api/people/3"
+    },
+    {
+      "name": "Darth Vader",
       "url": "/api/people/4"
     },
     {
       "name": "Leia Organa",
+      "url": "/api/people/5"
+    },
+    {
+      "name": "Owen Lars",
       "url": "/api/people/6"
     },
     {
@@ -110,18 +122,6 @@
     {
       "name": "Nien Nunb",
       "url": "/api/people/31"
-    },
-    {
-      "name": "Qui-Gon Jinn",
-      "url": "/api/people/32"
-    },
-    {
-      "name": "Nute Gunray",
-      "url": "/api/people/33"
-    },
-    {
-      "name": "Finis Valorum",
-      "url": "/api/people/34"
     }
   ]
 }
