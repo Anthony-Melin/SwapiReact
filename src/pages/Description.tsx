@@ -18,7 +18,7 @@ const Description = () => {
     } = useLoaderData() as Awaited<ReturnType<typeof clientLoader>>
     return (
         <main id="description-page" data-testid="description-page">
-            <h1>{name || title}</h1>
+            <h1 data-testid="description-title">{name || title}</h1>
             {Object.entries(restKeys).map(([key, value]) => {
                 if (typeof value === 'string') {
                     if (key === 'height') {

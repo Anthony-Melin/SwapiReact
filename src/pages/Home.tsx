@@ -9,7 +9,7 @@ function Home() {
         <main id="home-page" data-testid="home-page">
             <h1>Swapi React</h1>
             <div id="crawl-container">
-                <div id="crawl-content">
+                <div id="crawl-content" data-testid="crawl-content">
                     {crawl.lines.map((line, index) => <p key={`crawl-${index}`} data-testid={`crawl-${index}`}>{line}</p>)}
                     <p>
                         <Link data-testid="to-explorer" to={urlParse(Object.values(sections)[0])}>
