@@ -4,3 +4,4 @@ build
 coverage
 public/mockServiceWorker.js
 .idea
+/cypress/screenshots/
