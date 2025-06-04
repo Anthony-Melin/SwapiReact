@@ -1,8 +1,20 @@
 {
-  "count": 79,
+  "count": 82,
   "next": "/api/people?page=3",
   "previous": "/api/people?page=1",
   "results": [
+    {
+      "name": "Qui-Gon Jinn",
+      "url": "/api/people/32"
+    },
+    {
+      "name": "Nute Gunray",
+      "url": "/api/people/33"
+    },
+    {
+      "name": "Finis Valorum",
+      "url": "/api/people/34"
+    },
     {
       "name": "Padmé Amidala",
       "url": "/api/people/35"
@@ -110,18 +122,6 @@
     {
       "name": "Cordé",
       "url": "/api/people/61"
-    },
-    {
-      "name": "Cliegg Lars",
-      "url": "/api/people/62"
-    },
-    {
-      "name": "Poggle the Lesser",
-      "url": "/api/people/63"
-    },
-    {
-      "name": "Luminara Unduli",
-      "url": "/api/people/64"
     }
   ]
 }
