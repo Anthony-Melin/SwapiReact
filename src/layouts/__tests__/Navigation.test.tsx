@@ -2,8 +2,6 @@ import {describe, expect, it} from 'vitest'
 import { createRoutesStub } from 'react-router'
 import {render, screen} from '@testing-library/react'
 import Navigation from '../Navigation.tsx'
-import getFetch from '@api/getFetch.ts'
-import Root from '@api/root.types.ts'
 import { SectionContext } from '@hooks/useSections.tsx'
 
 describe('Description', () => {
@@ -17,12 +15,7 @@ describe('Description', () => {
     ])
 
     it.skip('should render navigation buttons', async () => {
-        const root = await getFetch<Root>()
-        render(
-            <SectionContext value={root}>
-                <Stub />
-            </SectionContext>
-        )
+        render(<Stub />)
 
         let element
         element = await screen.findByTestId('section-0')
@@ -51,20 +44,22 @@ describe('Description', () => {
     })
 
     it('should render navigation buttons', async () => {
-        const root = await getFetch<Root>()
         render(
-            <SectionContext value={root}>
+            <SectionContext value={{
+                "section 1": "/api/section1",
+                "section 2": "/api/section2",
+            }}>
                 <Stub />
             </SectionContext>
         )
 
         let element
         element = await screen.findByTestId('section-0')
-        expect(element).toHaveTextContent('section1')
+        expect(element).toHaveTextContent('section 1')
         expect(element).toHaveAttribute('href', '/section1')
 
         element = await screen.findByTestId('section-1')
-        expect(element).toHaveTextContent('section2')
+        expect(element).toHaveTextContent('section 2')
         expect(element).toHaveAttribute('href', '/section2')
     })
 })
