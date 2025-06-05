@@ -31,15 +31,15 @@ describe('description', () => {
         })
         it('should render homeworld', () => {
             cy.get('[data-testid="homeworld"]').contains(
-                'Home world: /api/planets/1'
+                'Home world: planet 1'
             )
         })
         it('should render films', () => {
             cy.get('[data-testid="film-title"]').contains('Films')
-            cy.get('[data-testid="film-0"]').contains('/api/films/1')
-            cy.get('[data-testid="film-1"]').contains('/api/films/2')
-            cy.get('[data-testid="film-2"]').contains('/api/films/3')
-            cy.get('[data-testid="film-3"]').contains('/api/films/6')
+            cy.get('[data-testid="film-0"]').contains('film 1')
+            cy.get('[data-testid="film-1"]').contains('film 2')
+            cy.get('[data-testid="film-2"]').contains('film 3')
+            cy.get('[data-testid="film-3"]').contains('film 6')
         })
         it('should render species', () => {
             cy.get('[data-testid="species-title"]').contains('Species')
@@ -49,13 +49,13 @@ describe('description', () => {
         })
         it('should render vehicles', () => {
             cy.get('[data-testid="vehicle-title"]').contains('Vehicles')
-            cy.get('[data-testid="vehicle-0"]').contains('/api/vehicles/14')
-            cy.get('[data-testid="vehicle-1"]').contains('/api/vehicles/30')
+            cy.get('[data-testid="vehicle-0"]').contains('vehicle 14')
+            cy.get('[data-testid="vehicle-1"]').contains('vehicle 30')
         })
         it('should render starships', () => {
             cy.get('[data-testid="starship-title"]').contains('Starships')
-            cy.get('[data-testid="starship-0"]').contains('/api/starships/12')
-            cy.get('[data-testid="starship-1"]').contains('/api/starships/22')
+            cy.get('[data-testid="starship-0"]').contains('starship 12')
+            cy.get('[data-testid="starship-1"]').contains('starship 22')
         })
         it('should render created', () => {
             cy.get('[data-testid="created"]').contains(
@@ -181,7 +181,7 @@ describe('description', () => {
         })
         it('should render homeworld', () => {
             cy.get('[data-testid="homeworld"]').contains(
-                'Home world: /api/planets/9'
+                'Home world: planet 9'
             )
         })
         it('should render average_lifespan', () => {
