@@ -1,10 +1,11 @@
-import { PropsWithChildren } from 'react'
+import { FC, PropsWithChildren } from 'react'
 
 type LabelValueProps = PropsWithChildren<{
     label: string
     value: string
     testid: string
     remap?: Record<string, string>
+    Wrap?: FC<PropsWithChildren>
 }>
 
 const LabelValue = ({
@@ -12,13 +13,14 @@ const LabelValue = ({
     value,
     testid,
     remap = {},
+    Wrap = ({...props}) => <p {...props} />,
     ...restProps
 }: LabelValueProps) => {
     const displayedValue = value in remap ? remap[value] : value
     return (
-        <p data-testid={testid} {...restProps}>
+        <Wrap data-testid={testid} {...restProps}>
             {label}: {displayedValue}
-        </p>
+        </Wrap>
     )
 }
 
