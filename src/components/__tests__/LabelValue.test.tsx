@@ -27,7 +27,7 @@ describe('LabelValue', () => {
         )
     })
 
-    it('should may optionnaly wrap value with custom component', () => {
+    it('may optionally wrap value with custom component', () => {
         render(
             <LabelValue
                 label="LABEL"
