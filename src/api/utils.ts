@@ -10,3 +10,7 @@ export const urlFormat = (root: string, url: string) => {
         .concat('.json')
         .replace(/\/{2,}/g, '/')
 }
+
+export const urlParseName = (url: string) => {
+    return url.replace(/(.*)\/(species|\w*(?=s\/)|\w*(?=\/))(s?\/)(\d+)\/*/, '$2 $4')
+}

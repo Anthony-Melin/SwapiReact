@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest'
-import { urlFormat, urlParse } from '@api/utils.ts'
+import { urlFormat, urlParse, urlParseName } from '@api/utils.ts'
 
 describe('utils', () => {
     describe.each([
@@ -36,6 +36,17 @@ describe('utils', () => {
     ])('urlFormat', (front, api) => {
         test(`transform ${front} to ${api}`, () => {
             expect(urlFormat('/', front)).toBe(api)
+        })
+    })
+
+    describe.each([
+        ['/api/sections/01', 'section 01'],
+        ['/api/sections/01/', 'section 01'],
+        ['/api/nested/sections/01', 'section 01'],
+        ['/api/species/01', 'species 01'],
+    ])('urlParseName', (api, front) => {
+        test(`transform ${api} to ${front}`, () => {
+            expect(urlParseName(api)).toBe(front)
         })
     })
 })
