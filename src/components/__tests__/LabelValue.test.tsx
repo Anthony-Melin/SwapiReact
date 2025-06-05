@@ -26,4 +26,18 @@ describe('LabelValue', () => {
             'LABEL: REMAP_VALUE'
         )
     })
+
+    it('should may optionnaly wrap value with custom component', () => {
+        render(
+            <LabelValue
+                label="LABEL"
+                value="VALUE"
+                Wrap={({...props}) => <h6 {...props} />}
+                testid="testid"
+            />
+        )
+        const element = screen.getByTestId('testid')
+        expect(element.tagName).eq('H6')
+        expect(element).toHaveTextContent('LABEL: VALUE')
+    })
 })
