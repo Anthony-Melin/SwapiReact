@@ -1,9 +1,10 @@
-import { PropsWithChildren } from 'react'
+import { FC, PropsWithChildren } from 'react'
 
 type ListValueProps = PropsWithChildren<{
     title: string
     item: string
     values: string[]
+    Wrap?: FC<PropsWithChildren<{ value: string }>>
     testid: string
 }>
 
@@ -11,6 +12,7 @@ const ListValue = ({
     title,
     item,
     values,
+    Wrap = ({ value, ...props }) => <p {...props}>{value}</p>,
     testid,
     ...restProps
 }: ListValueProps) => {
@@ -23,11 +25,11 @@ const ListValue = ({
                 <ul>
                     {values.map((value, index) => {
                         return (
-                            <li
-                                key={`${testid}-${index}`}
-                                data-testid={`${testid}-${index}`}
-                            >
-                                {value}
+                            <li key={`${testid}-${index}`}>
+                                <Wrap
+                                    data-testid={`${testid}-${index}`}
+                                    value={value}
+                                />
                             </li>
                         )
                     })}
