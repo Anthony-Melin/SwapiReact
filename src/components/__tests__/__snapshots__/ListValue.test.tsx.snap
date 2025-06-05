@@ -29,15 +29,19 @@ exports[`ListValue > with filled list > should match snapshot 1`] = `
     TITLE
   </p>
   <ul>
-    <li
-      data-testid="testid-0"
-    >
-      VALUE_1
+    <li>
+      <p
+        data-testid="testid-0"
+      >
+        VALUE_1
+      </p>
     </li>
-    <li
-      data-testid="testid-1"
-    >
-      VALUE_2
+    <li>
+      <p
+        data-testid="testid-1"
+      >
+        VALUE_2
+      </p>
     </li>
   </ul>
 </div>
