@@ -18,6 +18,12 @@ describe('Description', () => {
         render(<Stub initialEntries={[sufixUrl]} />)
     }
 
+    const expectLink = async (testid: string, href: string, label: string) => {
+        const element = await screen.findByTestId(testid)
+        expect(element).toHaveAttribute('href', href)
+        expect(element).toHaveTextContent(label)
+    }
+
     describe('section 1 / item 1', () => {
         beforeEach(() => {
             renderDescription('/section1/1')
@@ -99,12 +105,8 @@ describe('Description', () => {
             expect(await screen.findByTestId('film-title')).toHaveTextContent(
                 'Films'
             )
-            expect(await screen.findByTestId('film-0')).toHaveTextContent(
-                '/api/films/1'
-            )
-            expect(await screen.findByTestId('film-1')).toHaveTextContent(
-                '/api/films/2'
-            )
+            await expectLink('film-0', '/films/1', 'film 1')
+            await expectLink('film-1', '/films/2', 'film 2')
         })
 
         it('should render height', async () => {
@@ -117,36 +119,24 @@ describe('Description', () => {
             expect(
                 await screen.findByTestId('starship-title')
             ).toHaveTextContent('Starships')
-            expect(await screen.findByTestId('starship-0')).toHaveTextContent(
-                '/api/starships/12/'
-            )
-            expect(await screen.findByTestId('starship-1')).toHaveTextContent(
-                '/api/starships/22/'
-            )
+            await expectLink('starship-0', '/starships/12', 'starship 12')
+            await expectLink('starship-1', '/starships/22', 'starship 22')
         })
 
         it('should render vehicles', async () => {
             expect(
                 await screen.findByTestId('vehicle-title')
             ).toHaveTextContent('Vehicles')
-            expect(await screen.findByTestId('vehicle-0')).toHaveTextContent(
-                '/api/vehicles/14/'
-            )
-            expect(await screen.findByTestId('vehicle-1')).toHaveTextContent(
-                '/api/vehicles/30/'
-            )
+            await expectLink('vehicle-0', '/vehicles/14', 'vehicle 14')
+            await expectLink('vehicle-1', '/vehicles/30', 'vehicle 30')
         })
 
         it('should render species', async () => {
             expect(
                 await screen.findByTestId('species-title')
             ).toHaveTextContent('Species')
-            expect(await screen.findByTestId('species-0')).toHaveTextContent(
-                '/api/species/14/'
-            )
-            expect(await screen.findByTestId('species-1')).toHaveTextContent(
-                '/api/species/30/'
-            )
+            await expectLink('species-0', '/species/14', 'species 14')
+            await expectLink('species-1', '/species/30', 'species 30')
         })
 
         it('should render mass', async () => {
@@ -186,9 +176,7 @@ describe('Description', () => {
         })
 
         it('should render homeworld', async () => {
-            expect(await screen.findByTestId('homeworld')).toHaveTextContent(
-                'Home world: /api/homeworld/1/'
-            )
+            await expectLink('homeworld', '/homeworld/1', 'Home world: homeworld 1')
         })
 
         it('should render climate', async () => {
@@ -291,16 +279,20 @@ describe('Description', () => {
             )
         })
 
-        it.skip('should render characters', async () => {
+        it('should render characters', async () => {
             expect(
-                await screen.findByTestId('characters-title')
+                await screen.findByTestId('character-title')
             ).toHaveTextContent('Characters')
-            expect(await screen.findByTestId('characters-0')).toHaveTextContent(
-                '/api/characters/1/'
-            )
-            expect(await screen.findByTestId('characters-1')).toHaveTextContent(
-                '/api/characters/2/'
-            )
+            await expectLink('character-0', '/characters/1', 'character 1')
+            await expectLink('character-1', '/characters/2', 'character 2')
+        })
+
+        it('should render people', async () => {
+            expect(
+                await screen.findByTestId('people-title')
+            ).toHaveTextContent('Peoples')
+            await expectLink('people-0', '/people/66', 'people 66')
+            await expectLink('people-1', '/people/67', 'people 67')
         })
     })
 
@@ -336,13 +328,13 @@ describe('Description', () => {
             ).toHaveTextContent('No species linked')
         })
 
-        it.skip('should render characters', async () => {
+        it('should render characters', async () => {
             expect(
-                await screen.findByTestId('characters-title')
+                await screen.findByTestId('character-title')
             ).toHaveTextContent('Characters')
             expect(
-                await screen.findByTestId('characters-empty')
-            ).toHaveTextContent('No species linked')
+                await screen.findByTestId('character-empty')
+            ).toHaveTextContent('No character linked')
         })
 
         it('should render people', async () => {
@@ -359,7 +351,7 @@ describe('Description', () => {
                 'Pilots'
             )
             expect(await screen.findByTestId('pilot-empty')).toHaveTextContent(
-                '/api/species/14/'
+                'species 14'
             )
         })
 

@@ -1,9 +1,10 @@
-import { LoaderFunctionArgs, useLoaderData } from 'react-router'
+import { Link, LoaderFunctionArgs, useLoaderData } from 'react-router'
 import getFetch from '@api/getFetch.ts'
 import Details from '@api/details.types.ts'
 import LabelValue from '../components/LabelValue.tsx'
 import LabelDate from '../components/LabelDate.tsx'
 import ListValue from '../components/ListValue.tsx'
+import { urlParse, urlParseName } from '@api/utils.ts'
 
 export const clientLoader = async ({ request }: LoaderFunctionArgs) => {
     const url = new URL(request.url)
@@ -89,8 +90,11 @@ const Description = () => {
                             <LabelValue
                                 key={key}
                                 label="Home world"
-                                value={value}
+                                value={urlParseName(value)}
                                 testid="homeworld"
+                                Wrap={({ ...props }) => (
+                                    <Link to={urlParse(value)} {...props} />
+                                )}
                             />
                         )
                     } else if (key === 'created') {
@@ -410,6 +414,11 @@ const Description = () => {
                                 title="Films"
                                 item="film"
                                 values={values}
+                                Wrap={({ value, ...props }) => (
+                                    <Link to={urlParse(value)} {...props}>
+                                        {urlParseName(value)}
+                                    </Link>
+                                )}
                                 testid="film"
                             />
                         )
@@ -420,6 +429,11 @@ const Description = () => {
                                 title="Species"
                                 item="species"
                                 values={values}
+                                Wrap={({ value, ...props }) => (
+                                    <Link to={urlParse(value)} {...props}>
+                                        {urlParseName(value)}
+                                    </Link>
+                                )}
                                 testid="species"
                             />
                         )
@@ -430,6 +444,11 @@ const Description = () => {
                                 title="Vehicles"
                                 item="vehicle"
                                 values={values}
+                                Wrap={({ value, ...props }) => (
+                                    <Link to={urlParse(value)} {...props}>
+                                        {urlParseName(value)}
+                                    </Link>
+                                )}
                                 testid="vehicle"
                             />
                         )
@@ -440,6 +459,11 @@ const Description = () => {
                                 title="Starships"
                                 item="starship"
                                 values={values}
+                                Wrap={({ value, ...props }) => (
+                                    <Link to={urlParse(value)} {...props}>
+                                        {urlParseName(value)}
+                                    </Link>
+                                )}
                                 testid="starship"
                             />
                         )
@@ -450,6 +474,11 @@ const Description = () => {
                                 title="Characters"
                                 item="character"
                                 values={values}
+                                Wrap={({ value, ...props }) => (
+                                    <Link to={urlParse(value)} {...props}>
+                                        {urlParseName(value)}
+                                    </Link>
+                                )}
                                 testid="character"
                             />
                         )
@@ -460,6 +489,11 @@ const Description = () => {
                                 title="Peoples"
                                 item="people"
                                 values={values}
+                                Wrap={({ value, ...props }) => (
+                                    <Link to={urlParse(value)} {...props}>
+                                        {urlParseName(value)}
+                                    </Link>
+                                )}
                                 testid="people"
                             />
                         )
