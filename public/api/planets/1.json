@@ -1,0 +1,33 @@
+{
+    "name": "Tatooine",
+    "rotation_period": "23",
+    "orbital_period": "304",
+    "diameter": "10465",
+    "climate": "arid",
+    "gravity": "1 standard",
+    "terrain": "desert",
+    "surface_water": "1",
+    "population": "200000",
+    "residents": [
+        "/api/people/1",
+        "/api/people/2",
+        "/api/people/4",
+        "/api/people/6",
+        "/api/people/7",
+        "/api/people/8",
+        "/api/people/9",
+        "/api/people/11",
+        "/api/people/43",
+        "/api/people/62"
+    ],
+    "films": [
+        "/api/films/1",
+        "/api/films/3",
+        "/api/films/4",
+        "/api/films/5",
+        "/api/films/6"
+    ],
+    "created": "2014-12-09T13:50:49.641000Z",
+    "edited": "2014-12-20T20:58:18.411000Z",
+    "url": "/api/planets/1"
+}

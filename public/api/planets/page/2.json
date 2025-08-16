@@ -1,0 +1,127 @@
+{
+    "count": 60,
+    "next": null,
+    "previous": "/api/planets?page=1",
+    "results": [
+        {
+            "name": "Mon Cala",
+            "url": "/api/planets/31"
+        },
+        {
+            "name": "Chandrila",
+            "url": "/api/planets/32"
+        },
+        {
+            "name": "Sullust",
+            "url": "/api/planets/33"
+        },
+        {
+            "name": "Toydaria",
+            "url": "/api/planets/34"
+        },
+        {
+            "name": "Malastare",
+            "url": "/api/planets/35"
+        },
+        {
+            "name": "Dathomir",
+            "url": "/api/planets/36"
+        },
+        {
+            "name": "Ryloth",
+            "url": "/api/planets/37"
+        },
+        {
+            "name": "Aleen Minor",
+            "url": "/api/planets/38"
+        },
+        {
+            "name": "Vulpter",
+            "url": "/api/planets/39"
+        },
+        {
+            "name": "Troiken",
+            "url": "/api/planets/40"
+        },
+        {
+            "name": "Tund",
+            "url": "/api/planets/41"
+        },
+        {
+            "name": "Haruun Kal",
+            "url": "/api/planets/42"
+        },
+        {
+            "name": "Cerea",
+            "url": "/api/planets/43"
+        },
+        {
+            "name": "Glee Anselm",
+            "url": "/api/planets/44"
+        },
+        {
+            "name": "Iridonia",
+            "url": "/api/planets/45"
+        },
+        {
+            "name": "Tholoth",
+            "url": "/api/planets/46"
+        },
+        {
+            "name": "Iktotch",
+            "url": "/api/planets/47"
+        },
+        {
+            "name": "Quermia",
+            "url": "/api/planets/48"
+        },
+        {
+            "name": "Dorin",
+            "url": "/api/planets/49"
+        },
+        {
+            "name": "Champala",
+            "url": "/api/planets/50"
+        },
+        {
+            "name": "Mirial",
+            "url": "/api/planets/51"
+        },
+        {
+            "name": "Serenno",
+            "url": "/api/planets/52"
+        },
+        {
+            "name": "Concord Dawn",
+            "url": "/api/planets/53"
+        },
+        {
+            "name": "Zolan",
+            "url": "/api/planets/54"
+        },
+        {
+            "name": "Ojom",
+            "url": "/api/planets/55"
+        },
+        {
+            "name": "Skako",
+            "url": "/api/planets/56"
+        },
+        {
+            "name": "Muunilinst",
+            "url": "/api/planets/57"
+        },
+        {
+            "name": "Shili",
+            "url": "/api/planets/58"
+        },
+        {
+            "name": "Kalee",
+            "url": "/api/planets/59"
+        },
+        {
+            "name": "Umbara",
+            "url": "/api/planets/60"
+        }
+    ]
+}

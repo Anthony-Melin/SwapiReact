@@ -1,0 +1,127 @@
+{
+    "count": 39,
+    "next": "/api/vehicles?page=2",
+    "previous": null,
+    "results": [
+        {
+            "name": "Sand Crawler",
+            "url": "/api/vehicles/4"
+        },
+        {
+            "name": "T-16 skyhopper",
+            "url": "/api/vehicles/6"
+        },
+        {
+            "name": "X-34 landspeeder",
+            "url": "/api/vehicles/7"
+        },
+        {
+            "name": "TIE/LN starfighter",
+            "url": "/api/vehicles/8"
+        },
+        {
+            "name": "Snowspeeder",
+            "url": "/api/vehicles/14"
+        },
+        {
+            "name": "TIE bomber",
+            "url": "/api/vehicles/16"
+        },
+        {
+            "name": "AT-AT",
+            "url": "/api/vehicles/18"
+        },
+        {
+            "name": "AT-ST",
+            "url": "/api/vehicles/19"
+        },
+        {
+            "name": "Storm IV Twin-Pod cloud car",
+            "url": "/api/vehicles/20"
+        },
+        {
+            "name": "Sail barge",
+            "url": "/api/vehicles/24"
+        },
+        {
+            "name": "Bantha-II cargo skiff",
+            "url": "/api/vehicles/25"
+        },
+        {
+            "name": "TIE/IN interceptor",
+            "url": "/api/vehicles/26"
+        },
+        {
+            "name": "Imperial Speeder Bike",
+            "url": "/api/vehicles/30"
+        },
+        {
+            "name": "Vulture Droid",
+            "url": "/api/vehicles/33"
+        },
+        {
+            "name": "Multi-Troop Transport",
+            "url": "/api/vehicles/34"
+        },
+        {
+            "name": "Armored Assault Tank",
+            "url": "/api/vehicles/35"
+        },
+        {
+            "name": "Single Trooper Aerial Platform",
+            "url": "/api/vehicles/36"
+        },
+        {
+            "name": "C-9979 landing craft",
+            "url": "/api/vehicles/37"
+        },
+        {
+            "name": "Tribubble bongo",
+            "url": "/api/vehicles/38"
+        },
+        {
+            "name": "Sith speeder",
+            "url": "/api/vehicles/42"
+        },
+        {
+            "name": "Zephyr-G swoop bike",
+            "url": "/api/vehicles/44"
+        },
+        {
+            "name": "Koro-2 Exodrive airspeeder",
+            "url": "/api/vehicles/45"
+        },
+        {
+            "name": "XJ-6 airspeeder",
+            "url": "/api/vehicles/46"
+        },
+        {
+            "name": "LAAT/i",
+            "url": "/api/vehicles/50"
+        },
+        {
+            "name": "LAAT/c",
+            "url": "/api/vehicles/51"
+        },
+        {
+            "name": "AT-TE",
+            "url": "/api/vehicles/53"
+        },
+        {
+            "name": "SPHA",
+            "url": "/api/vehicles/54"
+        },
+        {
+            "name": "Flitknot speeder",
+            "url": "/api/vehicles/55"
+        },
+        {
+            "name": "Neimoidian shuttle",
+            "url": "/api/vehicles/56"
+        },
+        {
+            "name": "Geonosian starfighter",
+            "url": "/api/vehicles/57"
+        }
+    ]
+}

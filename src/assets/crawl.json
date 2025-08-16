@@ -1,0 +1,11 @@
+{
+    "lines": [
+        "L’année 2025 sera marqué par l’avènement d’une nouvelle ère pour le développement front-end.",
+        "React 19 et React Router V7 ont émergé, porteurs de promesses révolutionnaires : un rendu plus performant grâce au streaming SSR, une gestion fluide des états, et une navigation optimisée digne des vaisseaux les plus rapides de la galaxie.",
+        "Face à ces avancées, une mission s’impose : bâtir une application moderne, réactive et évolutive, exploitant toute la puissance de ces nouvelles technologies.",
+        "Grâce à React 19, le rendu devient progressif, interactif dès la première milliseconde.",
+        "Quant à React Router V7, il redéfinit le voyage entre les pages, rendant la navigation plus intuitive et efficace que jamais.",
+        "Pour explorer ces nouvelles technologies, un projet ambitieux voit le jour : SwapiReact, une application interactive dédiée à l’univers Star Wars.",
+        "Alimentée par l’API SWAPI, elle permet d’accéder aux données des personnages, planètes, vaisseaux et films de la saga culte."
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Saesee Tiin",
+    "height": "188",
+    "mass": "unknown",
+    "hair_color": "none",
+    "skin_color": "pale",
+    "eye_color": "orange",
+    "birth_year": "unknown",
+    "gender": "male",
+    "homeworld": "/api/planets/47",
+    "films": ["/api/films/4", "/api/films/6"],
+    "species": ["/api/species/24"],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:32:11.669000Z",
+    "edited": "2014-12-20T21:17:50.434000Z",
+    "url": "/api/people/56"
+}

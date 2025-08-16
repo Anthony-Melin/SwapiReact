@@ -5,13 +5,13 @@ export const links = () => [
     {
         rel: 'icon',
         type: 'image/svg',
-        href: './vite.svg',
+        href: `${import.meta.env.VITE_BASE_URL}vite.svg`,
     },
     {
         rel: 'stylesheet',
         type: 'text/css',
-        href: './index.css'
-    }
+        href: `${import.meta.env.VITE_BASE_URL}index.css`,
+    },
 ]
 
 export const meta = () => [

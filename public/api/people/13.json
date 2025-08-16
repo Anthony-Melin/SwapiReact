@@ -1,0 +1,18 @@
+{
+    "name": "Chewbacca",
+    "height": "228",
+    "mass": "112",
+    "hair_color": "brown",
+    "skin_color": "unknown",
+    "eye_color": "blue",
+    "birth_year": "200BBY",
+    "gender": "male",
+    "homeworld": "/api/planets/14",
+    "films": ["/api/films/1", "/api/films/2", "/api/films/3", "/api/films/6"],
+    "species": ["/api/species/3"],
+    "vehicles": ["/api/vehicles/19"],
+    "starships": ["/api/starships/10", "/api/starships/22"],
+    "created": "2014-12-10T16:42:45.066000Z",
+    "edited": "2014-12-20T21:17:50.332000Z",
+    "url": "/api/people/13"
+}

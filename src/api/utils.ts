@@ -1,9 +1,16 @@
-export const SWAPI_URL = 'https://swapi.dev/api'
-
 export const urlParse = (url: string) => {
-    return url.replace(SWAPI_URL, '').replace(/\/$/, '').replace(/\/\//, '/')
+    const path = url.split('api/').pop() as string
+    return `/${path.replace(/^\/*/g, '').replace(/\/$/, '')}`
 }
 
-export const urlFormat = (url: string) => {
-    return url.startsWith('/') ? `${SWAPI_URL}${url}` : `${SWAPI_URL}/${url}`
+export const urlFormat = (root: string, url: string) => {
+    return url
+        .replace(root, `/${root}/api/`)
+        .replace(/\?page=/, '/page/')
+        .concat('.json')
+        .replace(/\/{2,}/g, '/')
+}
+
+export const urlParseName = (url: string) => {
+    return url.replace(/(.*)\/(species|\w*(?=s\/)|\w*(?=\/))(s?\/)(\d+)\/*/, '$2 $4')
 }

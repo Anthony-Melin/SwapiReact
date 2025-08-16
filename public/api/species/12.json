@@ -1,0 +1,17 @@
+{
+    "name": "Gungan",
+    "classification": "amphibian",
+    "designation": "sentient",
+    "average_height": "190",
+    "skin_colors": "brown, green",
+    "hair_colors": "none",
+    "eye_colors": "orange",
+    "average_lifespan": "unknown",
+    "homeworld": "/api/planets/8",
+    "language": "Gungan basic",
+    "people": ["/api/people/36", "/api/people/37", "/api/people/38"],
+    "films": ["/api/films/4", "/api/films/5"],
+    "created": "2014-12-19T17:30:37.341000Z",
+    "edited": "2014-12-20T21:36:42.163000Z",
+    "url": "/api/species/12"
+}
