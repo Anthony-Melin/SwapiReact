@@ -4,7 +4,8 @@ import Details from '@api/details.types.ts'
 import LabelValue from '../components/LabelValue.tsx'
 import LabelDate from '../components/LabelDate.tsx'
 import ListValue from '../components/ListValue.tsx'
-import { urlParse, urlParseName } from '@api/utils.ts'
+import { urlParse } from '@api/utils.ts'
+import useNames from "@hooks/useNames.tsx";
 
 export const clientLoader = async ({ request }: LoaderFunctionArgs) => {
     const url = new URL(request.url)
@@ -17,6 +18,7 @@ const Description = () => {
     const {
         details: { name, title, ...restKeys },
     } = useLoaderData() as Awaited<ReturnType<typeof clientLoader>>
+    const names = useNames();
     return (
         <main id="description-page" data-testid="description-page">
             <h1 data-testid="description-title">{name || title}</h1>
@@ -90,7 +92,7 @@ const Description = () => {
                             <LabelValue
                                 key={key}
                                 label="Home world"
-                                value={urlParseName(value)}
+                                value={names[value]}
                                 testid="homeworld"
                                 Wrap={({ ...props }) => (
                                     <Link to={urlParse(value)} {...props} />
@@ -416,7 +418,7 @@ const Description = () => {
                                 values={values}
                                 Wrap={({ value, ...props }) => (
                                     <Link to={urlParse(value)} {...props}>
-                                        {urlParseName(value)}
+                                        {names[value]}
                                     </Link>
                                 )}
                                 testid="film"
@@ -431,7 +433,7 @@ const Description = () => {
                                 values={values}
                                 Wrap={({ value, ...props }) => (
                                     <Link to={urlParse(value)} {...props}>
-                                        {urlParseName(value)}
+                                        {names[value]}
                                     </Link>
                                 )}
                                 testid="species"
@@ -446,7 +448,7 @@ const Description = () => {
                                 values={values}
                                 Wrap={({ value, ...props }) => (
                                     <Link to={urlParse(value)} {...props}>
-                                        {urlParseName(value)}
+                                        {names[value]}
                                     </Link>
                                 )}
                                 testid="vehicle"
@@ -461,7 +463,7 @@ const Description = () => {
                                 values={values}
                                 Wrap={({ value, ...props }) => (
                                     <Link to={urlParse(value)} {...props}>
-                                        {urlParseName(value)}
+                                        {names[value]}
                                     </Link>
                                 )}
                                 testid="starship"
@@ -476,7 +478,7 @@ const Description = () => {
                                 values={values}
                                 Wrap={({ value, ...props }) => (
                                     <Link to={urlParse(value)} {...props}>
-                                        {urlParseName(value)}
+                                        {names[value]}
                                     </Link>
                                 )}
                                 testid="character"
@@ -491,7 +493,7 @@ const Description = () => {
                                 values={values}
                                 Wrap={({ value, ...props }) => (
                                     <Link to={urlParse(value)} {...props}>
-                                        {urlParseName(value)}
+                                        {names[value]}
                                     </Link>
                                 )}
                                 testid="people"

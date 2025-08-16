@@ -2,8 +2,8 @@ import { http, HttpResponse } from 'msw'
 
 const mocks = {
     root: {
-        section1: 'api/section1/',
-        section2: 'api/section2/',
+        section1: 'api/section1',
+        section2: 'api/section2',
     },
     section1: {
         page1: {
@@ -13,11 +13,11 @@ const mocks = {
             results: [
                 {
                     name: 'Item 1 of section 1',
-                    url: '/api/section1/1/',
+                    url: '/api/section1/1',
                 },
                 {
                     name: 'Item 2 of section 1',
-                    url: '/api/section1/2/',
+                    url: '/api/section1/2',
                 },
             ],
         },
@@ -28,11 +28,11 @@ const mocks = {
             results: [
                 {
                     title: 'Item 3 of section 1',
-                    url: '/api/section1/3/',
+                    url: '/api/section1/3',
                 },
                 {
                     title: 'Item 4 of section 1',
-                    url: '/api/section1/4/',
+                    url: '/api/section1/4',
                 },
             ],
         },
@@ -45,11 +45,11 @@ const mocks = {
             eye_color: 'blue',
             birth_year: '19BBY',
             gender: 'male',
-            homeworld: '/api/homeworld/1/',
-            films: ['/api/films/1/', '/api/films/2/'],
-            species: ['/api/species/14/', '/api/species/30/'],
-            vehicles: ['/api/vehicles/14/', '/api/vehicles/30/'],
-            starships: ['/api/starships/12/', '/api/starships/22/'],
+            homeworld: '/api/homeworld/1',
+            films: ['/api/films/1', '/api/films/2'],
+            species: ['/api/species/14', '/api/species/30'],
+            vehicles: ['/api/vehicles/14', '/api/vehicles/30'],
+            starships: ['/api/starships/12', '/api/starships/22'],
             created: '2014-12-09T13:50:51.644000Z',
             edited: '2014-12-20T21:17:56.891000Z',
             url: '/api/section1/1',
@@ -58,7 +58,7 @@ const mocks = {
             director: 'George Lucas',
             producer: 'Gary Kurtz, Rick McCallum',
             release_date: '1977-05-25',
-            characters: ['/api/characters/1/', '/api/characters/2/'],
+            characters: ['/api/characters/1', '/api/characters/2'],
             climate: 'arid',
             surface_water: '1',
             diameter: '10465',

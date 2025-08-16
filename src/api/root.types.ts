@@ -1,3 +1,6 @@
-type Root = Record<string, string>
+type Root = {
+    sections: Record<string, string>
+    names: Record<string, string>
+}
 
 export default Root
