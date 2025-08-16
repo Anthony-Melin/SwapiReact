@@ -273,12 +273,6 @@ describe('Description', () => {
             )
         })
 
-        it.skip('should render release_date', async () => {
-            expect(await screen.findByTestId('release_date')).toHaveTextContent(
-                'Release date: 1977-05-25'
-            )
-        })
-
         it('should render characters', async () => {
             expect(
                 await screen.findByTestId('character-title')
@@ -343,15 +337,6 @@ describe('Description', () => {
             )
             expect(await screen.findByTestId('people-empty')).toHaveTextContent(
                 'No people linked'
-            )
-        })
-
-        it.skip('should render pilots', async () => {
-            expect(await screen.findByTestId('pilot-title')).toHaveTextContent(
-                'Pilots'
-            )
-            expect(await screen.findByTestId('pilot-empty')).toHaveTextContent(
-                'species 14'
             )
         })
 
