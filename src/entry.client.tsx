@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HydratedRouter } from 'react-router/dom'
 import { SectionContext } from '@hooks/useSections.tsx'
+import { NamesContext } from '@hooks/useNames.tsx'
 import getFetch from '@api/getFetch.ts'
 import Root from '@api/root.types.ts'
 
@@ -18,8 +19,10 @@ enableMocking().then(async () => {
     ReactDOM.hydrateRoot(
         document,
         <React.StrictMode>
-            <SectionContext value={root}>
-                <HydratedRouter />
+            <SectionContext value={root.sections}>
+                <NamesContext value={root.names}>
+                    <HydratedRouter />
+                </NamesContext>
             </SectionContext>
         </React.StrictMode>
     )

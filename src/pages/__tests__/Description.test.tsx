@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { createRoutesStub } from 'react-router'
 import Description, { clientLoader } from '@pages/Description.tsx'
+import { NamesContext } from '@hooks/useNames.tsx'
 
 describe('Description', () => {
     const Stub = createRoutesStub([
@@ -15,7 +16,26 @@ describe('Description', () => {
     ])
 
     const renderDescription = (sufixUrl: string) => {
-        render(<Stub initialEntries={[sufixUrl]} />)
+        const names = {
+            "/api/people/66": "people 66",
+            "/api/people/67": "people 67",
+            "/api/homeworld/1": "homeworld 1",
+            "/api/films/1": "film 1",
+            "/api/films/2": "film 2",
+            "/api/starships/12": "starship 12",
+            "/api/starships/22": "starship 22",
+            "/api/characters/1": "character 1",
+            "/api/characters/2": "character 2",
+            "/api/species/14": "species 14",
+            "/api/species/30": "species 30",
+            "/api/vehicles/14": "vehicle 14",
+            "/api/vehicles/30": "vehicle 30"
+        }
+        render(
+            <NamesContext value={names}>
+                <Stub initialEntries={[sufixUrl]} />
+            </NamesContext>
+        )
     }
 
     const expectLink = async (testid: string, href: string, label: string) => {
